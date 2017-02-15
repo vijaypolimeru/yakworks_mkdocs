@@ -151,7 +151,7 @@
 
       // [screen +]: Match content width
       @include break-from-device(screen) {
-        width: 68.8rem;
+        width: 70.8rem;
       }
     }
   }
@@ -192,7 +192,7 @@
       border-radius: 0.2rem;
       background-color: $md-color-black--lighter;
       color: $md-color-white;
-      font-size: ms(0);
+      font-size: 1.6rem;
 
       // Placeholder color
       + .md-search__icon,
@@ -313,7 +313,7 @@
 
     // [screen +]: Set absolute width to omit unnecessary reflow
     @include break-from-device(screen) {
-      width: 68.8rem;
+      width: 70.8rem;
     }
 
     // [tablet landscape +]: Limit height to viewport
@@ -352,7 +352,7 @@
     padding: 0 1.6rem;
     background-color: $md-color-black--lightest;
     color: $md-color-black--light;
-    font-size: ms(-1);
+    font-size: 1.4rem;
     line-height: 4rem;
 
     // [tablet landscape +]: Increase left indent
@@ -399,20 +399,20 @@
 
   // Search result title
   &__title {
-    margin-top: 0.5em;
+    margin-top: 0.8rem;
     margin-bottom: 0;
     color: $md-color-black;
-    font-size: ms(0);
+    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   // Search result teaser
   &__teaser {
-    margin: 0.5em 0;
+    margin: 0.8rem 0;
     color: $md-color-black--light;
-    font-size: ms(-1);
-    line-height: 1.4;
+    font-size: 1.4rem;
+    line-height: 1.5;
     word-break: break-word;
   }
 }

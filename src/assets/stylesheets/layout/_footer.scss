@@ -131,7 +131,7 @@
   margin: 0 1.2rem;
   padding: 0.8rem 0;
   color: $md-color-white--lighter;
-  font-size: ms(-1);
+  font-size: 1.3rem;
 
   // [tablet portrait +]: Show next to social media links
   @include break-from-device(tablet portrait) {

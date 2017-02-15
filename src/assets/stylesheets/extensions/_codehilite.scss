@@ -221,7 +221,6 @@ $codehilite-whitespace: transparent;
     border-radius: 0.2rem;
     background-color: $md-code-background;
     color: $md-code-color;
-    line-height: 1.4;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 
@@ -259,7 +258,7 @@ $codehilite-whitespace: transparent;
     display: block;
     margin: 1em 0;
     border-radius: 0.2em;
-    font-size: ms(0);
+    font-size: 1.6rem;
     overflow: hidden;
 
     // Set table elements to block layout, because otherwise the whole flexbox

@@ -82,7 +82,7 @@
 
   // Correct headline offset with padding due to margin layering
   h1[id] {
-    padding-top: 0.8rem;
+    padding-top: 0.6rem;
 
     // Hide anchor for top-level heading, as it makes no sense
     &.headerlink {
@@ -92,11 +92,11 @@
 
   // Correct anchor offset for link blurring
   @each $level, $delta in (
-    h2: 0.4rem,
+    h2: 0.8rem,
     h3: 0.7rem,
     h4: 0.8rem,
-    h5: 1.1rem,
-    h6: 1.1rem
+    h5: 0.9rem,
+    h6: 0.9rem
   ) {
 
     // Un-targeted anchor

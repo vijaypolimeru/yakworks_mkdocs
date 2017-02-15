@@ -67,7 +67,7 @@ pip install mkdocs-material
 
     2. **Switching to a homebrewed Python**: Upgrade your Python installation
       to a self-contained solution by installing Python with Homebrew. This
-      should eliminate a lot of problems you may be having with `pip`.
+      should eliminate any problems you may be having with `pip`.
 
 #### using choco
 
