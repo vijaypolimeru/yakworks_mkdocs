@@ -11,7 +11,7 @@
         <meta name="description" content="A Material Design Components theme for MkDocs">
       
       
-        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/extensions/permalinks/">
+        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/embedding/excel/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -23,7 +23,7 @@
     
     
       
-        <title>Permalinks - Material Design Components for MkDocs</title>
+        <title>Excel - Material Design Components for MkDocs</title>
       
     
     
@@ -87,11 +87,11 @@
             
               
                 <span class="md-header-nav__parent">
-                  Extensions
+                  Embedding web apps
                 </span>
               
             
-            Permalinks
+            Excel
           
         </span>
       </div>
@@ -220,10 +220,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Embedding web apps
@@ -239,11 +241,50 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../embedding/excel/" title="Excel" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Excel
+      </label>
+    
+    <a href="./" title="Excel" class="md-nav__link md-nav__link--active">
       Excel
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#onedrive-embed" title="Onedrive Embed" class="md-nav__link">
+    Onedrive Embed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" title="Options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -253,7 +294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../embedding/lucid/" title="Lucid Charts" class="md-nav__link">
+    <a href="../lucid/" title="Lucid Charts" class="md-nav__link">
       Lucid Charts
     </a>
   </li>
@@ -265,7 +306,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../embedding/evernote/" title="Evernote" class="md-nav__link">
+    <a href="../evernote/" title="Evernote" class="md-nav__link">
       Evernote
     </a>
   </li>
@@ -277,7 +318,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../embedding/jing/" title="Snagit & Jing" class="md-nav__link">
+    <a href="../jing/" title="Snagit & Jing" class="md-nav__link">
       Snagit & Jing
     </a>
   </li>
@@ -304,12 +345,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Extensions
@@ -327,7 +366,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../admonition/" title="Admonition" class="md-nav__link">
+    <a href="../../extensions/admonition/" title="Admonition" class="md-nav__link">
       Admonition
     </a>
   </li>
@@ -339,7 +378,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../codehilite/" title="CodeHilite" class="md-nav__link">
+    <a href="../../extensions/codehilite/" title="CodeHilite" class="md-nav__link">
       CodeHilite
     </a>
   </li>
@@ -351,7 +390,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../footnotes/" title="Footnotes" class="md-nav__link">
+    <a href="../../extensions/footnotes/" title="Footnotes" class="md-nav__link">
       Footnotes
     </a>
   </li>
@@ -363,7 +402,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../metadata/" title="Metadata" class="md-nav__link">
+    <a href="../../extensions/metadata/" title="Metadata" class="md-nav__link">
       Metadata
     </a>
   </li>
@@ -373,54 +412,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Permalinks
-      </label>
-    
-    <a href="./" title="Permalinks" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../extensions/permalinks/" title="Permalinks" class="md-nav__link">
       Permalinks
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" title="Usage" class="md-nav__link">
-    Usage
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -430,7 +426,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../pymdown/" title="PyMdown" class="md-nav__link">
+    <a href="../../extensions/pymdown/" title="PyMdown" class="md-nav__link">
       PyMdown
     </a>
   </li>
@@ -479,22 +475,20 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
-    Installation
+  <a href="#onedrive-embed" title="Onedrive Embed" class="md-nav__link">
+    Onedrive Embed
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" title="Usage" class="md-nav__link">
-    Usage
+  <a href="#options" title="Options" class="md-nav__link">
+    Options
   </a>
   
 </li>
@@ -513,30 +507,43 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/9ci/mkdocs-material-components/edit/master/docs/extensions/permalinks.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/9ci/mkdocs-material-components/edit/master/docs/embedding/excel.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="permalinks">Permalinks<a class="headerlink" href="#permalinks" title="Permanent link">&para;</a></h1>
-<p>Permalinks are a feature of the <a href="https://pythonhosted.org/Markdown/extensions/toc.html">Table of Contents</a> extension, which is part
-of the standard Markdown library. The extension inserts an anchor at the end of
-each headline, which makes it possible to directly link to a subpart of the
-document.</p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>To enable permalinks, add the following to your <code>mkdocs.yml</code>:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc(permalink=true)</span>
-</pre></div>
-
-<p>This will add a link containing the paragraph symbol <code>¶</code> at the end of each
-headline (exactly like on the page you're currently viewing), which the
-Material theme will make appear on hover. In order to change the text of the
-permalink, a string can be passed, e.g.:</p>
-<div class="codehilite"><pre><span></span>markdown_extensions:
-  - toc(permalink=Link)
-</pre></div>
-
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>When enabled, permalinks are inserted automatically.</p>
+                  <h1>Excel</h1>
+                
+                <h2 id="onedrive-embed">Onedrive Embed<a class="headerlink" href="#onedrive-embed" title="Permanent link">&para;</a></h2>
+<p>The quick and easy method but less flexible is to do the following</p>
+<ol>
+<li>In a browser go to your <a href="https://onedrive.live.com">https://onedrive.live.com</a> and right click on the Excel file and then select embed.</li>
+</ol>
+<blockquote>
+<p><img alt="📝" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> <img alt="👉" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" /> You can then just copy the iframe code in the text box
+and paste it in to your document if desired but will loose the features you get below.</p>
+</blockquote>
+<ol>
+<li>Click 'generate' button.</li>
+<li>At bottom of panel click <code>Customize how this embedded workbook</code>.</li>
+<li>In new window click the <code>javascript</code> tab above the textbox at bottom.</li>
+<li>copy &amp; paste all of it temporarily as the textbox is stupidly small</li>
+<li>about 12 lines down locate the <code>var fileToken = ....</code> and copy the long code inside the quotes but don't copy the quotes themselves</li>
+<li>paste it into a divs <code>data-excel-token</code> attribute as seen in the html example below</li>
+</ol>
+<p><strong>simple example</strong>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span>
+<span class="na">data-excel-token</span><span class="o">=</span><span class="s">&quot;SDF4E541E7F8747E1B!395/-800160894226760165/t=0&amp;s=0&amp;v=!ANZtfYbhiHy1ASg&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div></p>
+<p>Will produce ...</p>
+<p><div
+data-excel-token="SDF4E541E7F8747E1B!395/-800160894226760165/t=0&s=0&v=!ACxW3W7JLW28c3M" >
+</div></p>
+<h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
+<p>example setting default zoom
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">data-excel-token</span><span class="o">=</span><span class="s">&quot;SDF4E541E7F8747E1B!395/-800160894226760165/t=0&amp;s=0&amp;v=!ACxW3W7JLW28c3M&quot;</span>
+<span class="na">data-zoom</span><span class="o">=</span><span class="s">&quot;80&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div></p>
                 
                   
                 
@@ -555,7 +562,7 @@ permalink, a string can be passed, e.g.:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../metadata/" title="Metadata" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../sandbox/" title="Syntax Quick Start" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -564,19 +571,19 @@ permalink, a string can be passed, e.g.:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Metadata
+                Syntax Quick Start
               </span>
             </div>
           </a>
         
         
-          <a href="../pymdown/" title="PyMdown" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lucid/" title="Lucid Charts" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                PyMdown
+                Lucid Charts
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

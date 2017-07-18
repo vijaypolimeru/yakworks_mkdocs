@@ -1,0 +1,1768 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <meta name="description" content="A Material Design Components theme for MkDocs">
+      
+      
+        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/sandbox/">
+      
+      
+        <meta name="author" content="Joshua Burnett">
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Syntax Quick Start - Material Design Components for MkDocs</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-4fd40ae432.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-b778559f56.palette.css">
+      
+      <link rel="stylesheet" href="../assets/stylesheets/material-components-web.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/mdc-web.css">
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://9ci.github.io/mkdocs-material-components/" title="Material Design Components for MkDocs" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Syntax Quick Start
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      9ci/mkdocs-material-components
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Material Design Components for MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      9ci/mkdocs-material-components
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Syntax Quick Start
+      </label>
+    
+    <a href="./" title="Syntax Quick Start" class="md-nav__link md-nav__link--active">
+      Syntax Quick Start
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" title="Intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" title="Quick Start" class="md-nav__link">
+    Quick Start
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cheatsheet" title="Cheatsheet" class="md-nav__link">
+    Cheatsheet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sidebar-bookmarks" title="Sidebar Bookmarks" class="md-nav__link">
+    Sidebar Bookmarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figures" title="Figures" class="md-nav__link">
+    Figures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callouts" title="Callouts" class="md-nav__link">
+    Callouts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sizing-alignment" title="Sizing &amp; Alignment" class="md-nav__link">
+    Sizing &amp; Alignment
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sizing-classes" title="Sizing Classes" class="md-nav__link">
+    Sizing Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alignment-classes" title="Alignment Classes" class="md-nav__link">
+    Alignment Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes-plugin" title="Attributes Plugin" class="md-nav__link">
+    Attributes Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id-reference-links" title="#id reference links" class="md-nav__link">
+    #id reference links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floats" title="Floats" class="md-nav__link">
+    Floats
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-attributes" title="Using Attributes" class="md-nav__link">
+    Using Attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-icons" title="Material Icons" class="md-nav__link">
+    Material Icons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rows" title="Rows" class="md-nav__link">
+    Rows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples_1" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floating-examples" title="Floating Examples" class="md-nav__link">
+    Floating Examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-lorem-ipsum" title="What is Lorem Ipsum?" class="md-nav__link">
+    What is Lorem Ipsum?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-does-it-come-from" title="Where does it come from?" class="md-nav__link">
+    Where does it come from?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-do-we-use-it" title="Why do we use it?" class="md-nav__link">
+    Why do we use it?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-can-i-get-some" title="Where can I get some?" class="md-nav__link">
+    Where can I get some?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rows_1" title="Rows" class="md-nav__link">
+    Rows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedding" title="Embedding" class="md-nav__link">
+    Embedding
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lucid-charts" title="Lucid Charts" class="md-nav__link">
+    Lucid Charts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evernote" title="Evernote" class="md-nav__link">
+    Evernote
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Embedding web apps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Embedding web apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/excel/" title="Excel" class="md-nav__link">
+      Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/lucid/" title="Lucid Charts" class="md-nav__link">
+      Lucid Charts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/evernote/" title="Evernote" class="md-nav__link">
+      Evernote
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/jing/" title="Snagit & Jing" class="md-nav__link">
+      Snagit & Jing
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Install & Config" class="md-nav__link">
+      Install & Config
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Extensions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/admonition/" title="Admonition" class="md-nav__link">
+      Admonition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/codehilite/" title="CodeHilite" class="md-nav__link">
+      CodeHilite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/footnotes/" title="Footnotes" class="md-nav__link">
+      Footnotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/metadata/" title="Metadata" class="md-nav__link">
+      Metadata
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/permalinks/" title="Permalinks" class="md-nav__link">
+      Permalinks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/pymdown/" title="PyMdown" class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../specimen/" title="Specimen" class="md-nav__link">
+      Specimen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../customization/" title="Customization" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" title="Intro" class="md-nav__link">
+    Intro
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" title="Quick Start" class="md-nav__link">
+    Quick Start
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cheatsheet" title="Cheatsheet" class="md-nav__link">
+    Cheatsheet
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sidebar-bookmarks" title="Sidebar Bookmarks" class="md-nav__link">
+    Sidebar Bookmarks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#figures" title="Figures" class="md-nav__link">
+    Figures
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callouts" title="Callouts" class="md-nav__link">
+    Callouts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sizing-alignment" title="Sizing &amp; Alignment" class="md-nav__link">
+    Sizing &amp; Alignment
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sizing-classes" title="Sizing Classes" class="md-nav__link">
+    Sizing Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alignment-classes" title="Alignment Classes" class="md-nav__link">
+    Alignment Classes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes-plugin" title="Attributes Plugin" class="md-nav__link">
+    Attributes Plugin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id-reference-links" title="#id reference links" class="md-nav__link">
+    #id reference links
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floats" title="Floats" class="md-nav__link">
+    Floats
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-attributes" title="Using Attributes" class="md-nav__link">
+    Using Attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#material-icons" title="Material Icons" class="md-nav__link">
+    Material Icons
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rows" title="Rows" class="md-nav__link">
+    Rows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples_1" title="Examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floating-examples" title="Floating Examples" class="md-nav__link">
+    Floating Examples
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-lorem-ipsum" title="What is Lorem Ipsum?" class="md-nav__link">
+    What is Lorem Ipsum?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-does-it-come-from" title="Where does it come from?" class="md-nav__link">
+    Where does it come from?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-do-we-use-it" title="Why do we use it?" class="md-nav__link">
+    Why do we use it?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-can-i-get-some" title="Where can I get some?" class="md-nav__link">
+    Where can I get some?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rows_1" title="Rows" class="md-nav__link">
+    Rows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedding" title="Embedding" class="md-nav__link">
+    Embedding
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lucid-charts" title="Lucid Charts" class="md-nav__link">
+    Lucid Charts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evernote" title="Evernote" class="md-nav__link">
+    Evernote
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div id="article-content" class="md-content"> 
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/9ci/mkdocs-material-components/edit/master/docs/sandbox.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                <h1 id="cards">Cards<a class="headerlink" href="#cards" title="Permanent link">&para;</a></h1>
+<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
+<p>For a 60 second quick start on Markdown
+<a 26rem="26rem" class="foo" href="http://commonmark.org/help/" target="_blank">commonmark has a great tutorial</a></p>
+<p>For more documentation about this doc engine visit <a href="http://squidfunk.github.io/mkdocs-material/">mkdocs material theme</a>.</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>We use the the blockquote syntax below to make "cards" in the flavors of "admonitions", "sidebar bookmarks", "callouts" and "figures".
+We try and stick with a simple combination of emojis and bold text for title.
+Most markdown is supported in the blockquote format, editors support formatting
+and syntax highlighting, has nice support for autocompletion (on emojis too in Atom at least)
+Finally, it degrades nicely and will still look decent in markdown parsers that support the basics, such as github.
+We have to hijack a few emojis to use as the first thing in the blockquotes but we think it worth it.
+click the edit pencil above to see the source for this page.</p>
+<p>Here is an example of what the markdown would degrade to and look when a parser doesn't support this extension</p>
+<hr />
+<blockquote>
+<p><img alt="📘" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d8.png" title=":blue_book:" /> <strong>Note: Cool Feature</strong><br />
+Using an emoji and strong text we can specify what we need to build other types of blocks</p>
+<div class="codehilite"><pre><span></span>&gt; :blue_book: **Note: Cool Feature**
+&gt; Information here
+</pre></div>
+
+
+</blockquote>
+<hr />
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<h3 id="cheatsheet">Cheatsheet<a class="headerlink" href="#cheatsheet" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" />  </p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Callout</td>
+<td>&gt; 📣 or <code>&gt; :mega:</code></td>
+</tr>
+<tr>
+<td>Figure</td>
+<td>&gt; 📷 or <code>&gt; :camera:</code></td>
+</tr>
+<tr>
+<td>Sidebar Bookmark</td>
+<td><code>&gt; 🔖</code> or <code>&gt; :bookmark:</code></td>
+</tr>
+<tr>
+<td>Float Left align</td>
+<td>'&gt; 👈' or <code>&gt; :point_left:</code></td>
+</tr>
+<tr>
+<td>Float Right align</td>
+<td>'&gt; 👉' or <code>&gt; :point_right:</code></td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span>example syntax
+<span class="k">&gt; </span><span class="ge">📝 **Some Title**</span>
+<span class="k">&gt; </span><span class="ge">The content</span>
+
+<span class="k">&gt; </span><span class="ge">:memo:{.tip} **The Tip Title**</span>
+The content
+
+<span class="k">&gt; </span><span class="ge">:bulb: also a tip, just text</span>
+
+<span class="k">&gt; </span><span class="ge">:mega: :point_left:</span>
+a call out floated left
+
+with sizing and float alignment
+<span class="k">&gt; </span><span class="ge">:camera:{.float-left .pct33}</span>
+<span class="k">&gt; </span><span class="ge">**Figure Title**   </span>
+<span class="k">&gt; </span><span class="ge">![](images/dingus/image.png)</span>
+</pre></div>
+
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Admonitions</th>
+<th>Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Memo / Note</td>
+<td>&gt; 📝 or <code>&gt; :memo:</code></td>
+</tr>
+<tr>
+<td>Tip / Hint</td>
+<td><code>&gt; 💡</code> or <code>&gt; :bulb:</code> or <code>&gt; :memo:{.tip}</code></td>
+</tr>
+<tr>
+<td>Success</td>
+<td><img alt="👍" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" /> <code>&gt; :thumbsup:</code> or <code>&gt; :memo:{.success}</code></td>
+</tr>
+<tr>
+<td>Summary</td>
+<td><img alt="📖" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d6.png" title=":book:" /> <code>&gt; :book:</code> or <code>&gt; :memo:{.summary}</code></td>
+</tr>
+<tr>
+<td>Warning</td>
+<td><img alt="⚠️" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" /> <code>&gt; :warning:</code></td>
+</tr>
+<tr>
+<td>Fail</td>
+<td><img alt="❌" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/274c.png" title=":x:" /> <code>&gt; :x:</code> or <code>&gt; :memo:{.fail}</code></td>
+</tr>
+<tr>
+<td>Danger</td>
+<td><img alt="💥" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" /> <code>&gt; :boom:</code> or <code>&gt; :memo:{.danger}</code></td>
+</tr>
+<tr>
+<td>Bug</td>
+<td><img alt="🐛" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <code>&gt; :beetle:</code>  or  <code>&gt; :memo:{.bug}</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📝" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> <strong>Note/Memo Admonition</strong><br />
+<code>&gt; :memo: **Title**</code>  </p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> <strong>Tip Admonition</strong><br />
+<code>&gt; :bulb: **Title**</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="👍" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" /> <strong>Success Admonition</strong><br />
+<code>&gt; :thumbsup: **Title**</code></p>
+</blockquote>
+<hr />
+</div>
+<div class="row">
+<blockquote>
+<p><img alt="📖" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d6.png" title=":book:" /> <strong>Summary Admonition</strong>
+<code>&gt; :book: content</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="⚠️" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" /> Warning/Important<br />
+<code>&gt; :warning: content</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="❌" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/274c.png" title=":x:" /> Failure Admonition<br />
+<code>&gt; :x: content</code></p>
+</blockquote>
+<hr />
+</div>
+<div class="row">
+<blockquote>
+<p><img alt="💥" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" /> <strong>Danger Admonition</strong> <br />
+<code>&gt; :boom: content</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="🐛" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <strong>Bug</strong>
+<code>&gt; :bug: content</code></p>
+</blockquote>
+<hr />
+</div>
+<div class="row">
+<blockquote>
+<p><img alt="🔖" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <strong>Sidebar Bookmark</strong> <br />
+<code>&gt; :bookmark: content</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji center-content" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Fig Caption</strong>
+<div class="codehilite"><pre><span></span>&gt; :camera: **Fig Caption**
+&gt; content
+</pre></div></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📣" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <strong>Callout</strong>
+<code>&gt; :mega: text</code></p>
+</blockquote>
+<hr />
+</div>
+<hr />
+<blockquote>
+<p><img alt="💡" class="gemoji center" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> we put the above examples in <code>&lt;div class=row&gt;</code> which we will cover later</p>
+</blockquote>
+<h2 id="sidebar-bookmarks">Sidebar Bookmarks<a class="headerlink" href="#sidebar-bookmarks" title="Permanent link">&para;</a></h2>
+<p>Sidebar bookmarks are an idea taken from ascidoc</p>
+<blockquote>
+<p><img alt="🔖" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <strong>Sidebars</strong></p>
+<ul>
+<li>sidebar bookmarks shrink/expand to fit the content by default.</li>
+<li>They have a centered title</li>
+<li>They also have margins like other typeset content</li>
+<li>they can be floated like all other cards</li>
+</ul>
+</blockquote>
+<p>any valid markdown such as tables can also go into the blocks</p>
+<blockquote>
+<p><img alt="🔖" class="gemoji center-content" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <strong>Sidebar with lots of elements</strong>
+added <code>{.center-content}</code> to center contents.<br />
+center-text centers the container elements as well as text</p>
+<ul>
+<li>lists get centered and expand</li>
+<li><code>&lt;li&gt;</code> part is always left aligned</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">y</span>
+<span class="nx">foo</span> <span class="o">!=</span> <span class="nx">bar</span>
+</pre></div>
+
+<blockquote>
+<p>nested blockquotes are still full width</p>
+</blockquote>
+<p>Images get centered<br />
+<img alt="stormcat" class="small" src="../images/dingus/image.png" title="The Stormtroopcat" /></p>
+<blockquote>
+<p><img alt="📝" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> nested admonitions</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">Header One</th>
+<th align="left">Header Two</th>
+<th align="right">dollar amounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Item One</td>
+<td align="left">Item Two is longer</td>
+<td align="right">$100.23</td>
+</tr>
+<tr>
+<td align="left">bboo</td>
+<td align="left">baz</td>
+<td align="right">$200.45</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<h2 id="figures">Figures<a class="headerlink" href="#figures" title="Permanent link">&para;</a></h2>
+<ul>
+<li>figures are used for images, latex or anything really</li>
+<li>they have no styling or padding</li>
+<li>the title will be placed on the bottom, you can use <em>italic</em></li>
+<li>use ids to link to them from elsewhere in your doc <code>:camera:{#your-id-name}</code></li>
+</ul>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong><em>Image Figure</em></strong> <br />
+<img src='../images/dingus/image.png'></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji center-content" id="example-table-figure" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Table Figure</strong>
+<em>Will work with diagrams too</em></p>
+<table>
+<thead>
+<tr>
+<th>tables</th>
+<th>can be</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>in figures</td>
+<td>as well</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+</div>
+<h2 id="callouts">Callouts<a class="headerlink" href="#callouts" title="Permanent link">&para;</a></h2>
+<ul>
+<li>callouts have larger text for emphasis</li>
+<li>will be centered by default</li>
+<li>useful when wanting to highlight key areas in article as can be seen in the
+  article example below</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="codehilite"><pre><span></span>&gt; :mega: **This is a callout with big centered text like this**  
+&gt; **Callouts are blockquotes with bigger text and special styling.**
+</pre></div>
+
+
+<p>will produce</p>
+<blockquote>
+<p><img alt="📣" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <strong>This is a callout with big centered text like this</strong><br />
+<strong>Callouts are blockquotes with bigger text and special styling.</strong></p>
+</blockquote>
+<h2 id="sizing-alignment">Sizing &amp; Alignment<a class="headerlink" href="#sizing-alignment" title="Permanent link">&para;</a></h2>
+<p>Unless a size is specified, images will use the original dimensions of the image up to the size of its container..
+Admonitions</p>
+<table>
+<thead>
+<tr>
+<th>block</th>
+<th>where</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>image</strong></td>
+<td>on its own line</td>
+<td>img size up to container size</td>
+</tr>
+<tr>
+<td></td>
+<td>floated</td>
+<td>.medium (210px)</td>
+</tr>
+<tr>
+<td><strong>figure</strong></td>
+<td>on its own line</td>
+<td>shrink to fit its contents</td>
+</tr>
+<tr>
+<td></td>
+<td>floated</td>
+<td>.medium 210px</td>
+</tr>
+<tr>
+<td><strong>admonition</strong></td>
+<td>on its own line</td>
+<td>full container width</td>
+</tr>
+<tr>
+<td></td>
+<td>floated</td>
+<td>.pct50 50%</td>
+</tr>
+<tr>
+<td><strong>sidebar/bookmark</strong></td>
+<td>on its own line</td>
+<td>shrink to fit its contents</td>
+</tr>
+<tr>
+<td></td>
+<td>floated</td>
+<td>.medium 210px</td>
+</tr>
+</tbody>
+</table>
+<p><strong>"Floated"</strong>: meaning is that text will float around it and its usually positioned left or right.</p>
+<h3 id="sizing-classes">Sizing Classes<a class="headerlink" href="#sizing-classes" title="Permanent link">&para;</a></h3>
+<div class="row">
+<table>
+<thead>
+<tr>
+<th>class</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.pct20</td>
+<td>20%</td>
+</tr>
+<tr>
+<td>.pct33</td>
+<td>33%</td>
+</tr>
+<tr>
+<td>.pct50</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>.pct66</td>
+<td>66%</td>
+</tr>
+<tr>
+<td>.pct80</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>.pct100</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>class</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.mini</td>
+<td>35px</td>
+</tr>
+<tr>
+<td>.xsmall</td>
+<td>80px</td>
+</tr>
+<tr>
+<td>.small</td>
+<td>150px</td>
+</tr>
+<tr>
+<td>.medium</td>
+<td>210px</td>
+</tr>
+<tr>
+<td>.large</td>
+<td>300px</td>
+</tr>
+<tr>
+<td>.xlarge</td>
+<td>450px</td>
+</tr>
+<tr>
+<td>.big</td>
+<td>600px</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="alignment-classes">Alignment Classes<a class="headerlink" href="#alignment-classes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>class</th>
+<th>Desc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.center</td>
+<td>Center in relation to the container its sitting in</td>
+</tr>
+<tr>
+<td>.center-content</td>
+<td>center the contents only</td>
+</tr>
+<tr>
+<td>.center-all</td>
+<td>Center in relation to the container And center the content</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>.float-left or <code>:point_left:</code></td>
+<td>float the block/image LEFT letting other content flow around it</td>
+</tr>
+<tr>
+<td>.float-right or <code>:point_right:</code></td>
+<td>float the block/image RIGHT letting other content flow around it</td>
+</tr>
+</tbody>
+</table>
+<h3 id="attributes-plugin">Attributes Plugin<a class="headerlink" href="#attributes-plugin" title="Permanent link">&para;</a></h3>
+<p>We rely on <a href="https://pythonhosted.org/Markdown/extensions/attr_list.html">the attributes plugin</a> to use these classes.
+Attach them to the emoji that is being used to setup the block. like so <code>&gt; :memo:{.small} ...</code>.</p>
+<h3 id="id-reference-links">#id reference links<a class="headerlink" href="#id-reference-links" title="Permanent link">&para;</a></h3>
+<p>Using the attributes plugin you can assign reference id's to link back to. You can , for example, refer and link to figures such as linking to the <a href="#example-table-figure">example table figure</a> at the start of this doc.
+We do this with the attributes plugin by assigning a unique id to the figure above like this <code>&gt; :camera:{#example-table-figure} ...</code> and then reference that link like this <code>[example figure](#example-table-figure)</code>. The hash symbol <code>#</code> is short hand for <code>id=</code>.</p>
+<h2 id="floats">Floats<a class="headerlink" href="#floats" title="Permanent link">&para;</a></h2>
+<p>Floats can use emojis too.
+add <img alt="👈" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <code>:point_left:</code> to float left and <img alt="👉" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" /> <code>:point_right:</code> to float right</p>
+<blockquote>
+<p><img alt="📣" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <img alt="👈" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" />
+floated left callout<br />
+<code>&gt; :mega: :point_left: floated left callout</code></p>
+</blockquote>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<blockquote>
+<p><img alt="📣" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <img alt="👉" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" />
+floated left callout<br />
+<code>&gt; :mega: :point_right: floated left callout</code></p>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<blockquote>
+<p><img alt="👈" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" />
+ <img align="left" alt="" src="../images/gandhi.jpg" width="80" />
+ The moment the slave resolves that he will no longer be a slave, his fetters fall.</p>
+</blockquote>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<hr />
+<h3 id="using-attributes">Using Attributes<a class="headerlink" href="#using-attributes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><img alt="📝" class="gemoji float-left pct33" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> <strong>Use Size</strong><br />
+This is a note floated left with a 33% width <code>.pct33</code> 33% size</p>
+</blockquote>
+<p>Can use the the attributes plugin instead of the emoji's above as shown in more examples below
+just tag append the class names from above inside the squiggly brackets <code>{ }</code>
+next to the emoji. the example below will give you what you see on the left here</p>
+<div class="codehilite"><pre><span></span><span class="k">    &gt; </span><span class="ge">:memo:{.float-left .pct33} **Use Size**</span>
+<span class="k">    &gt; </span><span class="ge">This is a small note floated left</span>
+</pre></div>
+
+<hr />
+<h2 id="material-icons">Material Icons<a class="headerlink" href="#material-icons" title="Permanent link">&para;</a></h2>
+<p>You can use the material icons by adding an <code>.icon</code> class to an italic using atiributes<br />
+<code>_cloud_{.icon}</code> will produce <em class="icon">cloud</em> for example.
+any of these are valid <a href="https://material.io/icons/">https://material.io/icons/</a><br />
+💡 remember to use <code>_</code> when there is a space in the icon name</p>
+<h2 id="rows">Rows<a class="headerlink" href="#rows" title="Permanent link">&para;</a></h2>
+<p>Wrap one or more blocks in a <code>&lt;div markdown=&quot;1&quot; class=&quot;row&quot;&gt; &lt;/div&gt;</code>
+This will equal space those blocks in that row as can be seen in many examples in this doc.</p>
+<h2 id="examples_1">Examples<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👈" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong><em>pi day rocks it at our house</em></strong>
+<img src="../images/kids-pie-day.jpg" width='300'></p>
+</blockquote>
+<!-- Excel src="../docs/fancyStuff.xlsx" range="A1:E50"-->
+
+<!-- End-->
+
+<p>can be floated on both sides</p>
+<blockquote>
+<p><img alt="📷" class="gemoji float-right small" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Figure: Image Caption</strong><br />
+<img alt="" src="../images/mental-thumb.jpg" />
+changes size uses attributes to set size
+<code>&gt; :camera:{.float-right .medium} **Figure Title**</code></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji float-right large" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.large</strong><br />
+<img alt="" src="../images/dingus/image.png" /></p>
+</blockquote>
+<p><strong>Size &amp; Alignment Examples</strong>
+see chart above</p>
+<blockquote>
+<p><img alt="📷" class="gemoji float-left tiny" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.tiny</strong><br />
+<img alt="" class="pico" src="../images/dingus/image.png" /></p>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+<p><img alt="📷" class="gemoji float-left xsmall" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.xsmall</strong><br />
+<img alt="" src="../images/dingus/image.png" /></p>
+</blockquote>
+<p>&nbsp;</p>
+<blockquote>
+<p><img alt="📷" class="gemoji float-left small" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.small</strong><br />
+<img alt="" src="../images/dingus/image.png" /></p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji medium center" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>.medium .center</strong><br />
+<img alt="" src="../images/dingus/image.png" /></p>
+</blockquote>
+<hr />
+<p><strong>stand-alone sidebar bookmarks &amp; figure examples</strong></p>
+<blockquote>
+<p><img alt="📷" class="gemoji center-all pct80" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /><br />
+added <code>{.center-all .pct80}</code> to center in container and center contents and make size 66%</p>
+<table>
+<thead>
+<tr>
+<th align="left">Header One</th>
+<th align="left">Header Two</th>
+<th align="right">dollar amounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Item One</td>
+<td align="left">Item Two is longer</td>
+<td align="right">$100.23</td>
+</tr>
+<tr>
+<td align="left">bboo</td>
+<td align="left">baz</td>
+<td align="right">$200.45</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<p><strong>More Alignment Examples</strong></p>
+<ul>
+<li>more examples are below in the Lorem Ipsum</li>
+</ul>
+<h2 id="floating-examples">Floating Examples<a class="headerlink" href="#floating-examples" title="Permanent link">&para;</a></h2>
+<h3 id="what-is-lorem-ipsum">What is Lorem Ipsum?<a class="headerlink" href="#what-is-lorem-ipsum" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><img alt="🔖" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f516.png" title=":bookmark:" /> <img alt="👈" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong>sidebar-left <img alt="📌" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cc.png" title=":pushpin:" /></strong>  </p>
+<ul>
+<li>used since the 1500s</li>
+<li>popularised in the 1960s</li>
+</ul>
+</blockquote>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+<blockquote>
+<p><img alt="💡" class="gemoji float-right small" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> <strong>Example Tip</strong><br />
+This is a tip admonition  </p>
+</blockquote>
+<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<h3 id="where-does-it-come-from">Where does it come from?<a class="headerlink" href="#where-does-it-come-from" title="Permanent link">&para;</a></h3>
+<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+<blockquote>
+<p><img alt="📣" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4e3.png" title=":mega:" /> <img alt="👉" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" /> <strong>roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</strong></p>
+</blockquote>
+<p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+<h3 id="why-do-we-use-it">Why do we use it?<a class="headerlink" href="#why-do-we-use-it" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👈" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong><em>Sample Code</em></strong>
+<div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="nx">x</span><span class="o">++</span>
+<span class="k">for</span> <span class="nx">foo</span> <span class="k">in</span> <span class="nx">some</span>
+</pre></div></p>
+</blockquote>
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+<h3 id="where-can-i-get-some">Where can I get some?<a class="headerlink" href="#where-can-i-get-some" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👈" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f448.png" title=":point_left:" /> <strong><em>foo</em></strong>
+<img alt="foo" src="../images/mental-thumb.jpg" title="pi day" /></p>
+</blockquote>
+<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <img alt="👉" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f449.png" title=":point_right:" /> <strong>Figure With a Table</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Header One</th>
+<th align="left">Header Two</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Item One</td>
+<td align="left">Lorem ipsum dolor sit amet,</td>
+</tr>
+<tr>
+<td align="left">bboo</td>
+<td align="left">baz</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis purus sed tortor blandit posuere. Donec id volutpat neque, ac pellentesque orci. Sed iaculis congue ligula vitae vehicula. Vivamus ut orci molestie, euismod lorem sed, auctor mi. Nunc lobortis urna at ex accumsan mollis. Suspendisse mattis ullamcorper justo, in rhoncus est commodo vitae. Aenean efficitur risus a accumsan semper. Morbi molestie ex vitae convallis faucibus.mollis purus sed tortor blandit posuere. Donec id volutpat neque, ac pellentesque orci. Sed iaculis congue ligula vitae vehicula.</p>
+<h3 id="rows_1">Rows<a class="headerlink" href="#rows_1" title="Permanent link">&para;</a></h3>
+<div class="row">
+<table>
+<thead>
+<tr>
+<th align="left">Header One</th>
+<th align="left">Header Two</th>
+<th align="right">dollar amounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Item One</td>
+<td align="left">Item Two is longer</td>
+<td align="right">$100.23</td>
+</tr>
+<tr>
+<td align="left">bboo</td>
+<td align="left">baz</td>
+<td align="right">$200.45</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span>
+<span class="kr">import</span> <span class="nx">App</span> <span class="nx">from</span> <span class="s1">&#39;./App&#39;</span>
+<span class="kr">import</span> <span class="nx">router</span> <span class="nx">from</span> <span class="s1">&#39;./router&#39;</span>
+
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">productionTip</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="cm">/* eslint-disable no-new */</span>
+<span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+ <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+ <span class="nx">router</span><span class="p">,</span>
+ <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;App/&gt;&#39;</span><span class="p">,</span>
+ <span class="nx">components</span><span class="o">:</span> <span class="p">{</span> <span class="nx">App</span> <span class="p">}</span>
+<span class="p">})</span>
+</pre></div>
+
+</div>
+<hr />
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>table fig</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">Header One</th>
+<th align="left">Header Two</th>
+<th align="right">dollar amounts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Item One</td>
+<td align="left">Item Two is longer</td>
+<td align="right">$100.23</td>
+</tr>
+<tr>
+<td align="left">bboo</td>
+<td align="left">baz</td>
+<td align="right">$200.45</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>This is a figure with a code</strong></p>
+<div class="codehilite"><pre><span></span><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span>
+<span class="kr">import</span> <span class="nx">App</span> <span class="nx">from</span> <span class="s1">&#39;./App&#39;</span>
+<span class="kr">import</span> <span class="nx">router</span> <span class="nx">from</span> <span class="s1">&#39;./router&#39;</span>
+
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">productionTip</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="cm">/* eslint-disable no-new */</span>
+<span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+ <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+ <span class="nx">router</span><span class="p">,</span>
+ <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;&lt;App/&gt;&#39;</span><span class="p">,</span>
+ <span class="nx">components</span><span class="o">:</span> <span class="p">{</span> <span class="nx">App</span> <span class="p">}</span>
+<span class="p">})</span>
+</pre></div>
+
+</blockquote>
+</div>
+<h2 id="embedding">Embedding<a class="headerlink" href="#embedding" title="Permanent link">&para;</a></h2>
+<h3 id="lucid-charts">Lucid Charts<a class="headerlink" href="#lucid-charts" title="Permanent link">&para;</a></h3>
+<p>open the Lucid chart and select the share -&gt; embed menu item. copy and past the code</p>
+<div style="width: 100%; height: 480px; margin: 10px; position: relative;">
+<iframe allowfullscreen frameborder="0" style="width:100%; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e" id="n8kd1lbHuhin"></iframe></div>
+
+<h3 id="evernote">Evernote<a class="headerlink" href="#evernote" title="Permanent link">&para;</a></h3>
+<p>On your note go to share-&gt;copy public link. paste the link into a new browser.
+When it redirects you it will give a new link url. copy that and paste it into src for the iframe.
+Add <code>.html</code> to the end of the new url in src.
+<strong>Example</strong>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600px&quot;</span>  
+  <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
+  <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.evernote.com/shard/s5/sh/36116d20-c2cd-4b37-a5f3-a31df9152aab/84e7853122efc0d7.html&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div></p>
+<iframe width="100%" height="600px" frameborder="0"  src="https://www.evernote.com/shard/s5/sh/36116d20-c2cd-4b37-a5f3-a31df9152aab/84e7853122efc0d7.html">
+</iframe>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Index
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../embedding/excel/" title="Excel" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Excel
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/9ci" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/9ci" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://de.linkedin.com/in/greenbill" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-c35428f87f.js"></script>
+      
+      
+      <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
+      <script src="https://r.office.microsoft.com/r/rlidExcelWLJS?v=1&kip=1"></script>
+      <script src="../assets/javascripts/jq-mdc-web.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
