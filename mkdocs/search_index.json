@@ -172,12 +172,12 @@
         }, 
         {
             "location": "/embedding/lucid/", 
-            "text": "Through the hoops\n\n\nopen the Lucid chart and select the share -\n embed menu item. copy and past the code.\n\n\n\n\n its recomended to change the width to 100% and remove the margin and relative setting under style\n\n\n\n\ndiv\n \nstyle\n=\nwidth: 100%; height: 520px;\n  \n\niframe\n \nallowfullscreen\n \nframeborder\n=\n0\n\n\nstyle\n=\nwidth:100%; height:520px\n\n\nsrc\n=\nhttps://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e\n\n\nid\n=\nn8kd1lbHuhin\n\n\n/\niframe\n\n\n/\ndiv", 
+            "text": "Through the hoops\n\n\nopen the Lucid chart and select the share -\n embed menu item. click the \nactivate embed code\n and copy and past the HTML.\n\n\n\n\n\n\n its recomended to change the width to 100% and remove the margin and relative setting under style\n\n\n\n\ndiv\n \nstyle\n=\nwidth: 100%; height: 520px;\n  \n\niframe\n \nallowfullscreen\n \nframeborder\n=\n0\n\n\nstyle\n=\nwidth:100%; height:520px\n\n\nsrc\n=\nhttps://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e\n\n\nid\n=\nn8kd1lbHuhin\n\n\n/\niframe\n\n\n/\ndiv", 
             "title": "Lucid Charts"
         }, 
         {
             "location": "/embedding/lucid/#through-the-hoops", 
-            "text": "open the Lucid chart and select the share -  embed menu item. copy and past the code.    its recomended to change the width to 100% and remove the margin and relative setting under style   div   style = width: 100%; height: 520px;    iframe   allowfullscreen   frameborder = 0  style = width:100%; height:520px  src = https://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e  id = n8kd1lbHuhin  / iframe  / div", 
+            "text": "open the Lucid chart and select the share -  embed menu item. click the  activate embed code  and copy and past the HTML.     its recomended to change the width to 100% and remove the margin and relative setting under style   div   style = width: 100%; height: 520px;    iframe   allowfullscreen   frameborder = 0  style = width:100%; height:520px  src = https://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e  id = n8kd1lbHuhin  / iframe  / div", 
             "title": "Through the hoops"
         }, 
         {
