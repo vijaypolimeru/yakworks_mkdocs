@@ -11,7 +11,7 @@
         <meta name="description" content="A Material Design Components theme for MkDocs">
       
       
-        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/embedding/lucid/">
+        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/embedding/github/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -23,7 +23,7 @@
     
     
       
-        <title>Lucid Charts - Material Design Components for MkDocs</title>
+        <title>Github - Material Design Components for MkDocs</title>
       
     
     
@@ -109,7 +109,7 @@
                 </span>
               
             
-            Lucid Charts
+            Github
           
         </span>
       </div>
@@ -272,43 +272,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Lucid Charts
-      </label>
-    
-    <a href="./" title="Lucid Charts" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../lucid/" title="Lucid Charts" class="md-nav__link">
       Lucid Charts
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#through-the-hoops" title="Through the hoops" class="md-nav__link">
-    Through the hoops
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -340,11 +308,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../github/" title="Github" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+    <a href="./" title="Github" class="md-nav__link md-nav__link--active">
       Github
     </a>
+    
   </li>
 
         
@@ -500,20 +475,6 @@
   
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#through-the-hoops" title="Through the hoops" class="md-nav__link">
-    Through the hoops
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -524,29 +485,29 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/embedding/lucid.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/embedding/github.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>Lucid Charts</h1>
+                  <h1>Github</h1>
                 
-                <h2 id="through-the-hoops">Through the hoops<a class="headerlink" href="#through-the-hoops" title="Permanent link">&para;</a></h2>
-<p>open the Lucid chart and select the share -&gt; embed menu item. copy and past the code.</p>
-<blockquote>
-<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> its recomended to change the width to 100% and remove the margin and relative setting under style</p>
-</blockquote>
-<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 100%; height: 520px;&quot;</span><span class="p">&gt;</span>  
-<span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">allowfullscreen</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
-<span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%; height:520px&quot;</span>
-<span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e&quot;</span>
-<span class="na">id</span><span class="o">=</span><span class="s">&quot;n8kd1lbHuhin&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</pre></div>
+                <div id="github" style="width: 402px; height: 346px"></div>
 
-<div style="width: 100%; height: 600px;">
-<iframe allowfullscreen frameborder="0" style="width:100%; height:600px" src="https://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e"
-id="n8kd1lbHuhin"></iframe>
-</div>
+<script type="text/javascript">
+var urlToGetAllOpenBugs = "https://api.github.com/9ci/repos/rcm/issues?state=open&labels=bug";
+
+$(document).ready(function () {
+    $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
+        $("div#github").append("found " + allIssues.length + " issues</br>");
+        $.each(allIssues, function (i, issue) {
+            console.log(issue)
+            $("div#github")
+                .append("<b>" + issue.number + " - " + issue.title + "</b></br>")
+                .append("created at: " + issue.created_at + "</br>")
+                .append(issue.body + "</br></br></br>");
+        });
+    });
+});
+</script>
                 
                   
                 
@@ -565,7 +526,7 @@ id="n8kd1lbHuhin"></iframe>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../excel/" title="Excel" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../jing/" title="Snagit & Jing" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -574,19 +535,19 @@ id="n8kd1lbHuhin"></iframe>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Excel
+                Snagit & Jing
               </span>
             </div>
           </a>
         
         
-          <a href="../evernote/" title="Evernote" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../getting-started/" title="Install & Config" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Evernote
+                Install & Config
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
