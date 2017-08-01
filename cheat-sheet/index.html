@@ -1,0 +1,1425 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <meta name="description" content="A Material Design Components theme for MkDocs">
+      
+      
+        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/cheat-sheet/">
+      
+      
+        <meta name="author" content="Joshua Burnett">
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.7.7">
+    
+    
+      
+        <title>Cheat Sheet - Material Design Components for MkDocs</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-31d9ee8b19.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-b778559f56.palette.css">
+      
+      <link rel="stylesheet" href="../assets/stylesheets/material-components-web.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/mdc-web.css">
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="http://9ci.github.io/mkdocs-material-components/" title="Material Design Components for MkDocs" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+            
+            Cheat Sheet
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      9ci/mkdocs-material-components
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
+    Material Design Components for MkDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      9ci/mkdocs-material-components
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Cheat Sheet
+      </label>
+    
+    <a href="./" title="Cheat Sheet" class="md-nav__link md-nav__link--active">
+      Cheat Sheet
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#emphasis" title="Emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soft-hard-line-breaks" title="Soft &amp; Hard Line Breaks" class="md-nav__link">
+    Soft &amp; Hard Line Breaks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" title="Lists" class="md-nav__link">
+    Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" title="Tasks" class="md-nav__link">
+    Tasks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" title="Links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" title="Images" class="md-nav__link">
+    Images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abbreviations" title="Abbreviations" class="md-nav__link">
+    Abbreviations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" title="Footnotes" class="md-nav__link">
+    Footnotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" title="Tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blockquotes" title="Blockquotes" class="md-nav__link">
+    Blockquotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocks-admonitions-callouts-sidebars" title="Blocks - admonitions, callouts, sidebars" class="md-nav__link">
+    Blocks - admonitions, callouts, sidebars
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-divs" title="Row Divs" class="md-nav__link">
+    Row Divs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headings-breaks" title="Headings &amp; Breaks" class="md-nav__link">
+    Headings &amp; Breaks
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../blocks/" title="Admonitions, callouts, sidebars" class="md-nav__link">
+      Admonitions, callouts, sidebars
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Embedding web apps
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Embedding web apps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/excel/" title="Excel" class="md-nav__link">
+      Excel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/lucid/" title="Lucid Charts" class="md-nav__link">
+      Lucid Charts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/evernote/" title="Evernote" class="md-nav__link">
+      Evernote
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/jing/" title="Snagit & Jing" class="md-nav__link">
+      Snagit & Jing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../embedding/github/" title="Github" class="md-nav__link">
+      Github
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../getting-started/" title="Install & Config" class="md-nav__link">
+      Install & Config
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Extensions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Extensions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/admonition/" title="Admonition" class="md-nav__link">
+      Admonition
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/codehilite/" title="CodeHilite" class="md-nav__link">
+      CodeHilite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/footnotes/" title="Footnotes" class="md-nav__link">
+      Footnotes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/metadata/" title="Metadata" class="md-nav__link">
+      Metadata
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/permalinks/" title="Permalinks" class="md-nav__link">
+      Permalinks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../extensions/pymdown/" title="PyMdown" class="md-nav__link">
+      PyMdown
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../specimen/" title="Specimen" class="md-nav__link">
+      Specimen
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../customization/" title="Customization" class="md-nav__link">
+      Customization
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#emphasis" title="Emphasis" class="md-nav__link">
+    Emphasis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#soft-hard-line-breaks" title="Soft &amp; Hard Line Breaks" class="md-nav__link">
+    Soft &amp; Hard Line Breaks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" title="Lists" class="md-nav__link">
+    Lists
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks" title="Tasks" class="md-nav__link">
+    Tasks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" title="Links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" title="Images" class="md-nav__link">
+    Images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abbreviations" title="Abbreviations" class="md-nav__link">
+    Abbreviations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#footnotes" title="Footnotes" class="md-nav__link">
+    Footnotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" title="Tables" class="md-nav__link">
+    Tables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blockquotes" title="Blockquotes" class="md-nav__link">
+    Blockquotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blocks-admonitions-callouts-sidebars" title="Blocks - admonitions, callouts, sidebars" class="md-nav__link">
+    Blocks - admonitions, callouts, sidebars
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#row-divs" title="Row Divs" class="md-nav__link">
+    Row Divs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headings-breaks" title="Headings &amp; Breaks" class="md-nav__link">
+    Headings &amp; Breaks
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div id="article-content" class="md-content"> 
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/cheat-sheet.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                
+                
+                <h2 id="tldr-cheat-sheet">TLDR Cheat Sheet<a class="headerlink" href="#tldr-cheat-sheet" title="Permanent link">&para;</a></h2>
+<p>For a 60 second quick start on Markdown
+<a class="new-tab" href="http://commonmark.org/help/">commonmark has a great tutorial</a></p>
+<h3 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>this is <span class="ge">_italic_</span> and so is <span class="ge">*this*</span>  
+this is <span class="gs">__bold__</span> and so is <span class="gs">**this**</span>
+^^underline^^,  <span class="gd">~~strike through~~</span>  
+==highlight==  and <span class="sb">`inline code`</span>  
+==*you* <span class="gs">**can**</span> ^^combine^^ <span class="sb">`too`</span>==
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" />
+this is <em>italic</em> and so is <em>this</em><br />
+this is <strong>bold</strong> and so is <strong>this</strong><br />
+<ins>underline</ins>,  <del>strike through</del><br />
+<mark>highlight</mark>  and <code>inline code</code><br />
+<mark><em>you</em> <strong>can</strong> <ins>combine</ins> <del>too</del></mark></p>
+</blockquote>
+</div>
+<h3 id="soft-hard-line-breaks">Soft &amp; Hard Line Breaks<a class="headerlink" href="#soft-hard-line-breaks" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>Put 2 spaces at the end of a line  
+to force a line break.  
+If you simply
+hit enter and
+don&#39;t use 2 spaces
+it merges the lines
+like this.  
+You can also force a break &lt;br&gt; anywhere
+using the <span class="sb">`&lt;br&gt;`</span> tag like we just did
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" />
+Put 2 spaces at the end of a line<br />
+to force a line break.<br />
+If you simply
+hit enter and
+don't use 2 spaces
+it merges the lines
+like this <br>
+You can also force a break <br> anywhere
+using the <code>&lt;br&gt;</code> tag like we just did</p>
+</blockquote>
+</div>
+<h3 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span><span class="k">*</span> need a blank line above to start new list
++ valid bullet symbols
++ <span class="sb">`*`</span>, <span class="sb">`-`</span> or &#39;+&#39;
+    <span class="k">-</span> 4 spaces or 1 tab
+    <span class="k">-</span> to indent
+
+<span class="k">1.</span> use <span class="ge">*numbers*</span> for ordered
+    <span class="k">*</span> can nest
+<span class="k">2.</span> <span class="gs">**numbers**</span> can be in order
+    <span class="k">3.</span> can also nest
+<span class="k">1.</span> but it will fix them if not
+
+<span class="k">-</span>   list item with two paragraphs.
+
+    anything like this paragraph
+    should be indented by 4 spaces
+    or a tab
+
+<span class="k">-</span>   you can add blocks too
+
+<span class="k">    &gt; </span><span class="ge">:memo:</span>
+<span class="k">    &gt;</span>
+<span class="ge">    &gt; * list under lists</span>
+<span class="k">    &gt; </span><span class="ge">* under lists</span>
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<ul>
+<li>need a blank line above to start new list</li>
+<li>valid bullet symbols</li>
+<li><code>*</code>, <code>-</code> or '+'<ul>
+<li>4 spaces or 1 tab</li>
+<li>to indent</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>use <em>numbers</em> for ordered<ul>
+<li>can nest</li>
+</ul>
+</li>
+<li><strong>numbers</strong> can be in order<ol>
+<li>can also nest</li>
+</ol>
+</li>
+<li>but it will fix them</li>
+</ol>
+<ul>
+<li>
+<p>list item with two paragraphs.</p>
+<p>anything like this paragraph
+should be indented by 4 spaces
+or a tab</p>
+</li>
+<li>
+<p>you can add blocks too</p>
+<blockquote>
+<p><img alt="📝" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /></p>
+<ul>
+<li>list under lists</li>
+<li>under lists</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</div>
+<h3 id="tasks">Tasks<a class="headerlink" href="#tasks" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span><span class="k">- [ ]</span> Task Lists <span class="sb">`- [ ]`</span>
+    <span class="k">- [x]</span> x instead of space
+    <span class="k">- [x]</span> will mark it complete
+<span class="k">- [ ]</span> work just like lists
+    <span class="k">*</span> can can contain indents
+    <span class="k">*</span> or anything else a list can
+
+<span class="k">1.</span> Or can be nested under others lists
+    <span class="k">- [ ]</span> like this
+    <span class="k">- [ ]</span> and this
+
+<span class="k">2.</span> This can help
+    <span class="k">- [ ]</span> like this
+    <span class="k">- [ ]</span> and this
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Task Lists <code>- [ ]</code><ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> x instead of space</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> will mark it complete</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> work just like lists<ul>
+<li>can can contain indents</li>
+<li>or anything else a list can</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>
+<p>Or can be nested under others lists</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> like this</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> and this</li>
+</ul>
+</li>
+<li>
+<p>This can help</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> like this</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> and this</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+</div>
+<h3 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>[<span class="nt">simple link</span>](<span class="na">https://www.google.com </span>)  
+[<span class="nt">with optional title</span>](<span class="na">https://www.google.com &quot;Google&#39;s Homepage&quot;</span>)  
+point to a [<span class="nt">relative file or md</span>](<span class="na">./embedding/lucid.md</span>) or
+mail link with emoji [<span class="nt">📧</span>](<span class="na">mailto:joshdev@9ci.com</span>) or
+links with icons [<span class="nt">like this _cloud_{.icon}</span>](<span class="na">https://material.io/icons/</span>)
+or [<span class="nt">use an image ![</span>](<span class="na">images/dingus/image-small.png</span>)](images/dingus/image.png)
+
+[Reference-Style Links][daringfireball reference id]
+put link at bottom of paragraph or page.
+you can use numbers or text for
+[reference-style link definitions][1]  
+or leave it empty and
+just use the [link text itself]  
+
+to [<span class="nt">open in new tab</span>](<span class="na">sandbox.md</span>){.new-tab}
+use <span class="sb">`{target=_blank} or {.new-tab}`</span> attributes
+use it on [ref links][new tab]{.new-tab} too
+
+Indenting <span class="ge">_reference links_</span>
+2 spaces is not required
+but a recommended convention
+
+  [daringfireball reference id]: https://daringfireball.net/projects/markdown/syntax#link
+  [1]: http://reason.com/blog
+  [link text itself]: ./images/material.png
+  [new tab]: sandbox.md
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<p><a href="https://www.google.com">simple link</a><br />
+<a href="https://www.google.com" title="Google's Homepage">with optional title</a><br />
+point to a <a href="../embedding/lucid/">relative file or md</a> or
+mail link with emoji <a href="mailto:joshdev@9ci.com">📧</a> or
+links with icons <a href="https://material.io/icons/">like this <em class="icon">cloud</em></a>
+or <a href="../images/dingus/image.png">use an image <img alt="" src="../images/dingus/image-small.png" /></a></p>
+<p><a href="https://daringfireball.net/projects/markdown/syntax#link">Reference-Style Links</a>
+put link at bottom of paragraph or page.
+you can use numbers or text for
+<a href="http://reason.com/blog">reference-style link definitions</a><br />
+or leave it empty and
+just use the <a href="../images/material.png">link text itself</a>  </p>
+<p>to <a class="new-tab" href="sandbox.md">open in new tab</a>
+us <code>{target=_blank} or {.new-tab}</code> attributes
+use it on <a class="new-tab" href="sandbox.md">ref links</a> too</p>
+<p><em>reference links</em> can be at bottom
+of paragraph. Indenting 2 spaces is not
+required but a recommended convention</p>
+</blockquote>
+</div>
+<h3 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>inline ![](images/dingus/image-small.png)
+with alt text ![<span class="nt">foo</span>](<span class="na">images/dingus/image-small.png</span>)  
+with ref links ![img-small][]  
+can use [<span class="nt">sizing attributes</span>](<span class="na">blocks/#sizing-alignment</span>)  
+Use <span class="gs">**zoomify**</span>  ![zoomify][img-dingus]{.tiny}
+
+![<span class="nt">zoomify</span>](<span class="na">images/dingus/image.png</span>){.center .small}
+
+<span class="k">&gt; </span><span class="ge">:camera: **Figure Title**</span>
+<span class="k">&gt; </span><span class="ge">![zoomify](images/dingus/image.png){.center .small}</span>
+
+  [img-small]: ./images/dingus/image-small.png
+  [img-dingus]: ./images/dingus/image.png
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<p>inline <img alt="" src="../images/dingus/image-small.png" />
+with alt text <img alt="foo" src="../images/dingus/image-small.png" /><br />
+with ref links <img alt="img-small" src="../images/dingus/image-small.png" /><br />
+can use <a href="../blocks/#sizing-alignment">sizing attributes</a></p>
+<p>Use zoomify in alt text to get
+click to zoom <img alt="zoomify" class="tiny" src="../images/dingus/image.png" /></p>
+<p><img alt="zoomify" class="center xsmall" src="../images/dingus/image.png" /></p>
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Figure Title</strong>
+<img alt="zoomify" class="center small" src="../images/dingus/image.png" /></p>
+</blockquote>
+</blockquote>
+</div>
+<h3 id="abbreviations">Abbreviations<a class="headerlink" href="#abbreviations" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>here are some abbr&#39;s
+HTML and FUBAR
+
+&gt;:bulb: if your editor gets confused by
+not having and enclosing <span class="ge">* then</span>
+<span class="ge">just add it to end of abbr def.</span>
+
+<span class="ge">---</span>
+
+<span class="ge">&gt;:warning: Don&#39;t indent these, doesn&#39;t seem to work</span>
+
+<span class="ge">*</span>[abbr]: Abbreviations
+<span class="ge">*[def]: Definition</span>
+<span class="ge">*</span>[HTML]: Hyper Text Markup Language
+<span class="ge">*[FUBAR]:  You know what it means*</span>
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" />
+here are some <abbr title="Abbreviations">abbr</abbr>'s
+<abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="You know what it means*">FUBAR</abbr></p>
+<blockquote>
+<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> if your editor gets confused by
+not having and enclosing * then
+just add it to end of <abbr title="Abbreviations">abbr</abbr> <abbr title="Definition">def</abbr>.</p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="⚠️" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" /> Don't indent these, doesn't seem to work</p>
+</blockquote>
+</blockquote>
+</div>
+<h3 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>Footnotes[^1] work like reference links
+They auto-number like ordered lists[^3]
+You can use any
+reference id[^text reference]  
+like ref links they can be
+organized at bottom
+of paragraph or page.
+
+  [^1]: footnote, click the return icon here to go back -&gt;
+  [^3]: the number will not necessarily be what you use
+  [^text reference]: text reference
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" />
+Footnotes<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> work like reference links
+They auto-number like ordered lists<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">2</a></sup>
+You can use any
+reference id<sup id="fnref:text reference"><a class="footnote-ref" href="#fn:text reference" rel="footnote">3</a></sup><br />
+like ref links they can be
+organized at bottom
+of paragraph or page.</p>
+</blockquote>
+</div>
+<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>Colons can be used to align columns.
+3 dashes min to separate headers.
+Outer pipes (|) are optional,
+and you don&#39;t need to make the
+raw Markdown line up prettily.
+You can also use inline Markdown.
+
+|  Tables  |      Are      |   Cool    |
+| -------- |:-------------:| ---------:|
+| col 3 is | right-aligned |     $1600 |
+| col 2 is |   centered    |       $12 |
+|          |   <span class="gs">**Total**   |   **$1612**</span> |
+
+==Table== | <span class="gs">**Format**</span> | 👀 <span class="ge">_scramble_</span>
+--- | --- | ---
+<span class="ge">*Still*</span> | <span class="sb">`renders`</span> | <span class="gs">**nicely**</span>
+[<span class="nt">with links</span>](<span class="na">images/dingus/image-small.png</span>) | images ![<span class="nt">zoomify</span>](<span class="na">images/dingus/image-small.png</span>){.tiny} | emojis 🍔
+icons <span class="ge">_cloud_</span>{.icon} | footnotes[^1] | use <span class="sb">`&lt;br&gt;`</span> &lt;br&gt; for multi-line &lt;br&gt; line breaks
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<p>Colons can be used to align columns.
+3 dashes min to separate headers.
+Outer pipes (|) are optional,
+ and you don't need to make the
+raw Markdown line up prettily.
+You can also use inline Markdown.</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td></td>
+<td align="center"><strong>Total</strong></td>
+<td align="right"><strong>$1612</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><mark>Table</mark></th>
+<th><strong>Format</strong></th>
+<th>👀 <em>fun</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td><a href="../images/dingus/image-small.png">with links</a></td>
+<td>images <img alt="zoomify" class="tiny" src="../images/dingus/image-small.png" /></td>
+<td>emojis 🍔</td>
+</tr>
+<tr>
+<td>icons <em class="icon">cloud</em></td>
+<td>footnotes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></td>
+<td>use <code>&lt;br&gt;</code> <br> for multi-line <br> line breaks</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</div>
+<h3 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50 float-left" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span><span class="k">&gt; </span><span class="ge">Blockquotes are handy to callout text.</span>
+they are greedy and will keep
+grabbing text. The &#39;&gt;&#39; is optional unless trying join
+<span class="k">&gt;</span>
+<span class="ge">paragraphs, tables etc.</span>
+
+a blank line and a new paragraph
+or other markdown thing end them
+
+&gt;:bulb:
+use a <span class="sb">`---`</span> seperator or <span class="sb">`&lt;br&gt;`</span>
+if you want multiple sepearte block quotes
+
+---
+
+<span class="k">&gt; </span><span class="ge">can have nested</span>
+<span class="k">&gt; </span><span class="ge">&gt; blockquotes inside of block quotes</span>
+block quotes can also contain any valid markdown
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<blockquote>
+<p>Blockquotes are handy to callout text.
+they are greedy and will keep
+grabbing text. The '&gt;' is optional unless trying join</p>
+<p>paragraphs, tables etc.</p>
+</blockquote>
+<p>a blank line and a new paragraph
+or other markdown thing end them</p>
+<blockquote>
+<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" />
+use a <code>---</code> seperator or <code>&lt;br&gt;</code>
+if you want multiple sepearte block quotes</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>can have nested</p>
+<blockquote>
+<p>blockquotes inside of block quotes
+block quotes can also contain any valid markdown
+</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</div>
+<h3 id="blocks-admonitions-callouts-sidebars">Blocks - admonitions, callouts, sidebars<a class="headerlink" href="#blocks-admonitions-callouts-sidebars" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50 float-left" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>&gt;:memo: <span class="gs">**Memo Admonition**</span>
+use blockquotes
+with emoji indicators for
+admonition memos, callout etc..
+See [<span class="nt">the section about blocks</span>](<span class="na">blocks.md#cheatsheet</span>)
+for the other items that can be used
+
+<span class="k">-</span>   &gt; :boom:
+    Can either have a title like above
+    or nothing
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<blockquote>
+<p><img alt="📝" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> <strong>Memo Admonition</strong>
+use blockquotes
+with emoji indicators for
+admonition memos, callout etc..</p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="💥" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" />
+Title title like above is optional</p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> See <a href="../blocks/#cheatsheet">the section about blocks</a>
+for the list of emojis that can be used.</p>
+</blockquote>
+</blockquote>
+</div>
+<h3 id="row-divs">Row Divs<a class="headerlink" href="#row-divs" title="Permanent link">&para;</a></h3>
+<p>through out this doc we have been using a "Row div". They allow blocks,
+blockquotes and tables to be in a row. Below is the source with some comments</p>
+<div class="codehilite"><pre><span></span>&lt;div markdown=&quot;1&quot; class=&quot;row&quot;&gt;<ins class="critic">markdown=&quot;1&quot; tells it to process what inside</ins>
+    <mark class="critic"> &lt;-needs to be a blank line for github to parse</mark>
+&gt; :camera:{.pct50} <ins class="critic">the pct50 makes it 50%. if we were not using a code block we could
+  leave this out and it would make every block in the div equal</ins>
+&gt;
+``` md
+|foo | bar |
+|----|-----|
+|baz | buzz|
+```
+
+--- <mark class="critic"> stops the block quote to start another</mark>
+
+&gt; :camera:
+&gt;             <mark class="critic"> &lt;- blank line here important in order for table to start</mark>
+&gt; |foo | bar |
+&gt; |----|-----|
+&gt; |baz | buzz|
+&gt;
+&gt; This table doesn&#39;t really have to
+&gt; be in a `:camera:` blockquote figure
+&gt; could also just be the table but
+&gt; the figure provides margins
+
+&lt;/div&gt; <mark class="critic"> closes the div and ends the row</mark>
+</pre></div>
+
+
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span>|foo | bar |
+|----|-----|
+|baz | buzz|
+</pre></div>
+
+</blockquote>
+<hr />
+<table>
+<thead>
+<tr>
+<th>foo</th>
+<th>bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>baz</td>
+<td>buzz</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="codehilite"><pre><span></span>&lt;div markdown=&quot;1&quot; class=&quot;row&quot;&gt;
+
+&gt; :bug: **here is another example**
+well just use admonitions and a table
+
+---
+
+&gt; :thumbsup: they will be equal sizes
+with whatever width is left from image
+and as you can see the heights get adjusted to be equal as well
+
+---
+
+![](images/dingus/image.png){.small}
+
+&lt;/div&gt;
+</pre></div>
+
+
+<div class="row">
+<blockquote>
+<p><img alt="🐛" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <strong>here is another example</strong>
+well just use admonitions and a table</p>
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="👍" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" /> they will be equal sizes
+with whatever width is left from image
+and as you can see the heights get adjusted to be equal as well</p>
+</blockquote>
+<hr />
+<p><img alt="" class="small" src="../images/dingus/image.png" /></p>
+</div>
+<h3 id="headings-breaks">Headings &amp; Breaks<a class="headerlink" href="#headings-breaks" title="Permanent link">&para;</a></h3>
+<div class="row">
+<blockquote>
+<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<div class="codehilite"><pre><span></span><span class="gh">#</span> h1 Heading
+<span class="gu">##</span> h2 Heading
+<span class="gu">###</span> h3 Heading
+<span class="gu">####</span> h4 Heading
+
+Horizontal Rules
+
+---
+</pre></div>
+
+</blockquote>
+<hr />
+<blockquote>
+<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<h1 id="h1-heading">h1 Heading<a class="headerlink" href="#h1-heading" title="Permanent link">&para;</a></h1>
+<h2 id="h2-heading">h2 Heading<a class="headerlink" href="#h2-heading" title="Permanent link">&para;</a></h2>
+<h3 id="h3-heading">h3 Heading<a class="headerlink" href="#h3-heading" title="Permanent link">&para;</a></h3>
+<h4 id="h4-heading">h4 Heading<a class="headerlink" href="#h4-heading" title="Permanent link">&para;</a></h4>
+<p>Horizontal Rules</p>
+<hr />
+</blockquote>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>footnote, click the return icon here to go back -&gt;&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>the number will not necessarily be what you use&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:text reference">
+<p>text reference&#160;<a class="footnote-backref" href="#fnref:text reference" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Index
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../blocks/" title="Admonitions, callouts, sidebars" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Admonitions, callouts, sidebars
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://9ci.github.io/mkdocs-material-components/" title="Material Components for MkDocs">
+          Material Components for MkDocs</a>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-4b954faba0.js"></script>
+      
+      
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+      <script>window.mdc.autoInit()</script>
+      <script src="../assets/javascripts/jq-mdc-web.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

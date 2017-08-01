@@ -11,7 +11,7 @@
         <meta name="description" content="A Material Design Components theme for MkDocs">
       
       
-        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/sandbox/">
+        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/blocks/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -19,20 +19,20 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.7.6">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.7.7">
     
     
       
-        <title>Syntax Quick Start - Material Design Components for MkDocs</title>
+        <title>Admonitions, callouts, sidebars - Material Design Components for MkDocs</title>
       
     
     
-      <script src="../assets/javascripts/modernizr.js"></script>
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-31d9ee8b19.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-b778559f56.palette.css">
       
       <link rel="stylesheet" href="../assets/stylesheets/material-components-web.min.css">
       <link rel="stylesheet" href="../assets/stylesheets/mdc-web.css">
@@ -48,7 +48,9 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
     
   </head>
   
@@ -61,24 +63,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -105,7 +90,7 @@
             
               
             
-            Syntax Quick Start
+            Admonitions, callouts, sidebars
           
         </span>
       </div>
@@ -223,6 +208,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../cheat-sheet/" title="Cheat Sheet" class="md-nav__link">
+      Cheat Sheet
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -230,33 +227,22 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Syntax Quick Start
+        Admonitions, callouts, sidebars
       </label>
     
-    <a href="./" title="Syntax Quick Start" class="md-nav__link md-nav__link--active">
-      Syntax Quick Start
+    <a href="./" title="Admonitions, callouts, sidebars" class="md-nav__link md-nav__link--active">
+      Admonitions, callouts, sidebars
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intro" title="Intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#overview" title="Overview" class="md-nav__link">
@@ -443,33 +429,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#embedding" title="Embedding" class="md-nav__link">
-    Embedding
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lucid-charts" title="Lucid Charts" class="md-nav__link">
-    Lucid Charts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evernote" title="Evernote" class="md-nav__link">
-    Evernote
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
     </ul>
@@ -486,13 +445,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-4">
       Embedding web apps
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-4">
         Embedding web apps
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -582,13 +541,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Extensions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -709,18 +668,9 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#intro" title="Intro" class="md-nav__link">
-    Intro
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#overview" title="Overview" class="md-nav__link">
@@ -907,33 +857,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#embedding" title="Embedding" class="md-nav__link">
-    Embedding
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lucid-charts" title="Lucid Charts" class="md-nav__link">
-    Lucid Charts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#evernote" title="Evernote" class="md-nav__link">
-    Evernote
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
       
       
     </ul>
@@ -948,15 +871,12 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/sandbox.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/blocks.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                <h1 id="cards">Cards<a class="headerlink" href="#cards" title="Permanent link">&para;</a></h1>
-<h2 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h2>
-<p>For a 60 second quick start on Markdown
-<a 26rem="26rem" class="foo" href="http://commonmark.org/help/" target="_blank">commonmark has a great tutorial</a></p>
-<p>For more documentation about this doc engine visit <a href="http://squidfunk.github.io/mkdocs-material/">mkdocs material theme</a>.</p>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+                  <h1>Admonitions, callouts, sidebars</h1>
+                
+                <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>We use the the blockquote syntax below to make "cards" in the flavors of "admonitions", "sidebar bookmarks", "callouts" and "figures".
 We try and stick with a simple combination of emojis and bold text for title.
 Most markdown is supported in the blockquote format, editors support formatting
@@ -1349,7 +1269,7 @@ Admonitions</p>
 </thead>
 <tbody>
 <tr>
-<td>.mini</td>
+<td>.tiny</td>
 <td>35px</td>
 </tr>
 <tr>
@@ -1682,24 +1602,6 @@ Many desktop publishing packages and web page editors now use Lorem Ipsum as the
 
 </blockquote>
 </div>
-<h2 id="embedding">Embedding<a class="headerlink" href="#embedding" title="Permanent link">&para;</a></h2>
-<h3 id="lucid-charts">Lucid Charts<a class="headerlink" href="#lucid-charts" title="Permanent link">&para;</a></h3>
-<p>open the Lucid chart and select the share -&gt; embed menu item. copy and past the code</p>
-<div style="width: 100%; height: 480px; margin: 10px; position: relative;">
-<iframe allowfullscreen frameborder="0" style="width:100%; height:480px" src="https://www.lucidchart.com/documents/embeddedchart/ee9393c4-427d-4390-97da-1d0a42b5823e" id="n8kd1lbHuhin"></iframe></div>
-
-<h3 id="evernote">Evernote<a class="headerlink" href="#evernote" title="Permanent link">&para;</a></h3>
-<p>On your note go to share-&gt;copy public link. paste the link into a new browser.
-When it redirects you it will give a new link url. copy that and paste it into src for the iframe.
-Add <code>.html</code> to the end of the new url in src.
-<strong>Example</strong>
-<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600px&quot;</span>  
-  <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span>
-  <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.evernote.com/shard/s5/sh/36116d20-c2cd-4b37-a5f3-a31df9152aab/84e7853122efc0d7.html&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
-</pre></div></p>
-<iframe width="100%" height="600px" frameborder="0"  src="https://www.evernote.com/shard/s5/sh/36116d20-c2cd-4b37-a5f3-a31df9152aab/84e7853122efc0d7.html">
-</iframe>
                 
                   
                 
@@ -1718,7 +1620,7 @@ Add <code>.html</code> to the end of the new url in src.
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../cheat-sheet/" title="Cheat Sheet" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1727,7 +1629,7 @@ Add <code>.html</code> to the end of the new url in src.
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Index
+                Cheat Sheet
               </span>
             </div>
           </a>
@@ -1757,40 +1659,22 @@ Add <code>.html</code> to the end of the new url in src.
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
         and
-        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
-          Material for MkDocs</a>
+        <a href="http://9ci.github.io/mkdocs-material-components/" title="Material Components for MkDocs">
+          Material Components for MkDocs</a>
       </div>
-      
-        
-  <div class="md-footer-social">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
-    
-      <a href="https://github.com/9ci" class="md-footer-social__link fa fa-github-alt"></a>
-    
-      <a href="https://twitter.com/9ci" class="md-footer-social__link fa fa-twitter"></a>
-    
-      <a href="https://de.linkedin.com/in/greenbill" class="md-footer-social__link fa fa-linkedin"></a>
-    
-  </div>
-
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.js"></script>
+      <script src="../assets/javascripts/application-4b954faba0.js"></script>
       
       
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
       <script>window.mdc.autoInit()</script>
-      <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
-      <script src="https://r.office.microsoft.com/r/rlidExcelWLJS?v=1&kip=1"></script>
       <script src="../assets/javascripts/jq-mdc-web.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.loadingoverlay/latest/loadingoverlay.min.js"></script>
       <script>app.initialize({url:{base:".."}})</script>
       
     
