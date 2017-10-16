@@ -3,66 +3,24 @@
 
     
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//cheat-sheet/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//cheat-sheet/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//blocks/</loc>
-     <lastmod>2017-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-        
-    <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//embedding/excel/</loc>
-     <lastmod>2017-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//embedding/lucid/</loc>
-     <lastmod>2017-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//embedding/evernote/</loc>
-     <lastmod>2017-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//embedding/jing/</loc>
-     <lastmod>2017-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//embedding/github/</loc>
-     <lastmod>2017-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-    <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//getting-started/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//blocks/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -70,38 +28,32 @@
     
         
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//extensions/admonition/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//embedding/excel/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//extensions/codehilite/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//embedding/lucid/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//extensions/footnotes/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//embedding/evernote/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//extensions/metadata/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//embedding/jing/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//extensions/permalinks/</loc>
-     <lastmod>2017-08-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//extensions/pymdown/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//embedding/github/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -109,16 +61,64 @@
 
     
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//specimen/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//getting-started/</loc>
+     <lastmod>2017-10-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>http://yakworks.github.io/mkdocs-material-components//extensions/admonition/</loc>
+     <lastmod>2017-10-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://yakworks.github.io/mkdocs-material-components//extensions/codehilite/</loc>
+     <lastmod>2017-10-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://yakworks.github.io/mkdocs-material-components//extensions/footnotes/</loc>
+     <lastmod>2017-10-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://yakworks.github.io/mkdocs-material-components//extensions/metadata/</loc>
+     <lastmod>2017-10-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://yakworks.github.io/mkdocs-material-components//extensions/permalinks/</loc>
+     <lastmod>2017-10-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://yakworks.github.io/mkdocs-material-components//extensions/pymdown/</loc>
+     <lastmod>2017-10-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>http://yakworks.github.io/mkdocs-material-components//specimen/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>http://9ci.github.io/mkdocs-material-components//customization/</loc>
-     <lastmod>2017-08-01</lastmod>
+     <loc>http://yakworks.github.io/mkdocs-material-components//customization/</loc>
+     <lastmod>2017-10-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

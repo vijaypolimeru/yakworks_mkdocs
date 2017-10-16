@@ -11,7 +11,7 @@
         <meta name="description" content="A Material Design Components theme for MkDocs">
       
       
-        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/embedding/evernote/">
+        <link rel="canonical" href="http://yakworks.github.io/mkdocs-material-components/embedding/evernote/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -19,20 +19,20 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.7.9">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.3">
     
     
       
-        <title>Evernote - Material Design Components for MkDocs</title>
+        <title>Evernote - MkDocs Material Components Theme</title>
       
     
     
-      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-31d9ee8b19.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-a9f1482a76.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-b778559f56.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-035c261bc5.palette.css">
       
       <link rel="stylesheet" href="../../assets/stylesheets/material-components-web.min.css">
       <link rel="stylesheet" href="../../assets/stylesheets/mdc-web.css">
@@ -42,8 +42,8 @@
         
         
         
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Ubuntu+Mono">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -76,10 +76,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://9ci.github.io/mkdocs-material-components/" title="Material Design Components for MkDocs" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components Theme" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -87,6 +88,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
+            MkDocs Material Components Theme -
             
               
                 <span class="md-header-nav__parent">
@@ -102,17 +104,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -133,7 +135,7 @@
   
 
 
-  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -142,7 +144,7 @@
       </div>
     
     <div class="md-source__repository">
-      9ci/mkdocs-material-components
+      yakworks/mkdocs-material-components
     </div>
   </a>
 
@@ -157,6 +159,7 @@
     <div class="md-container">
       
       
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -166,10 +169,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    Material Design Components for MkDocs
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
+    MkDocs Material Components Theme
   </label>
   
     <div class="md-nav__source">
@@ -179,7 +184,7 @@
   
 
 
-  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -188,7 +193,7 @@
       </div>
     
     <div class="md-source__repository">
-      9ci/mkdocs-material-components
+      yakworks/mkdocs-material-components
     </div>
   </a>
 
@@ -202,8 +207,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Index" class="md-nav__link">
-      Index
+    <a href="../.." title="Intro" class="md-nav__link">
+      Intro
     </a>
   </li>
 
@@ -302,7 +307,7 @@
   
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -497,7 +502,7 @@
   
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -521,10 +526,11 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/embedding/evernote.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/yakworks/mkdocs-material-components/edit/material-components-web/docs/embedding/evernote.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Evernote</h1>
+                
                 
                 <h2 id="through-the-hoops">Through the hoops<a class="headerlink" href="#through-the-hoops" title="Permanent link">&para;</a></h2>
 <ol>
@@ -606,7 +612,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application-4b954faba0.js"></script>
+      <script src="../../assets/javascripts/application-ee5842b7dc.js"></script>
       
       
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>

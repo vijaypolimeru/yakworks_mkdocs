@@ -11,7 +11,7 @@
         <meta name="description" content="A Material Design Components theme for MkDocs">
       
       
-        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/getting-started/">
+        <link rel="canonical" href="http://yakworks.github.io/mkdocs-material-components/getting-started/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -19,20 +19,20 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.7.9">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.3">
     
     
       
-        <title>Install & Config - Material Design Components for MkDocs</title>
+        <title>Install & Config - MkDocs Material Components Theme</title>
       
     
     
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-31d9ee8b19.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-a9f1482a76.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-b778559f56.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-035c261bc5.palette.css">
       
       <link rel="stylesheet" href="../assets/stylesheets/material-components-web.min.css">
       <link rel="stylesheet" href="../assets/stylesheets/mdc-web.css">
@@ -42,8 +42,8 @@
         
         
         
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Ubuntu+Mono">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -76,10 +76,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://9ci.github.io/mkdocs-material-components/" title="Material Design Components for MkDocs" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components Theme" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -87,6 +88,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
+            MkDocs Material Components Theme -
             
               
             
@@ -98,17 +100,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -129,7 +131,7 @@
   
 
 
-  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -138,7 +140,7 @@
       </div>
     
     <div class="md-source__repository">
-      9ci/mkdocs-material-components
+      yakworks/mkdocs-material-components
     </div>
   </a>
 
@@ -153,6 +155,7 @@
     <div class="md-container">
       
       
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -162,10 +165,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    Material Design Components for MkDocs
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
+    MkDocs Material Components Theme
   </label>
   
     <div class="md-nav__source">
@@ -175,7 +180,7 @@
   
 
 
-  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -184,7 +189,7 @@
       </div>
     
     <div class="md-source__repository">
-      9ci/mkdocs-material-components
+      yakworks/mkdocs-material-components
     </div>
   </a>
 
@@ -198,8 +203,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Index" class="md-nav__link">
-      Index
+    <a href=".." title="Intro" class="md-nav__link">
+      Intro
     </a>
   </li>
 
@@ -341,7 +346,7 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -688,7 +693,7 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -903,7 +908,8 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/getting-started.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/yakworks/mkdocs-material-components/edit/material-components-web/docs/getting-started.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
                 
                 
                 <h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
@@ -968,6 +974,13 @@ MkDocs through some package manager (e.g. Homebrew or <code>apt-get</code>) and 
 Material theme through <code>pip</code>, so both packages end up in different
 locations. MkDocs only checks it's install location for themes.</p>
 </div>
+<div class="admonition failure">
+<p class="admonition-title">ImportError: Failed loading extension 'markdown_include.include' from 'markdown_include.include'...</p>
+<p>If you run into this error, you just need to install "markdown-include" extension</p>
+<div class="codehilite"><pre><span></span>pip install markdown-include
+</pre></div>
+
+</div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>In order to enable the theme just add one of the following lines to your
 project's <code>mkdocs.yml</code>. If you installed Material using pip:</p>
@@ -990,7 +1003,7 @@ or read on and customize the theme through some options.</p>
 <p>The Material theme adds some extra variables for configuration via your
 project's <code>mkdocs.yml</code>. See the following sections for all available options.</p>
 <h3 id="changing-the-color-palette">Changing the color palette<a class="headerlink" href="#changing-the-color-palette" title="Permanent link">&para;</a></h3>
-<p>A default is hue is defined for every primary and accent color on Google's
+<p>A default hue is defined for every primary and accent color on Google's
 Material Design <a href="http://www.materialui.co/colors">color palette</a>, which makes it very easy to change the
 overall look of the theme. Just set the primary and accent colors using the
 following variables:</p>
@@ -1096,7 +1109,10 @@ screens and as part of the main navigation drawer on smaller screen sizes.
 Furthermore, if <code>repo_url</code> points to a GitHub, BitBucket or GitLab repository,
 the respective service logo will be shown next to the name of the repository.
 Additionally, for GitHub, the number of stars and forks is shown.</p>
-<div class="admonition warning">
+<p>If the repository is hosted in a private environment, the service logo can be
+set explicitly by setting <code>extra.repo_icon</code> to <code>github</code>, <code>gitlab</code> or
+<code>bitbucket</code>.</p>
+<div class="admonition question">
 <p class="admonition-title">Why is there an edit button at the top of every article?</p>
 <p>If the <code>repo_url</code> is set to a GitHub or BitBucket repository, and the
 <code>repo_name</code> is set to <em>GitHub</em> or <em>BitBucket</em> (implied by default), an
@@ -1120,6 +1136,13 @@ Simply create the folder <code>docs/images</code>, add your logo and embed it wi
   <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/logo.svg&#39;</span>
 </pre></div>
 
+<p>Additionally, the default icon can be changed by setting an arbitrary ligature
+(or Unicode code point) from the <a href="https://material.io/icons/">Material Design icon font</a>, e.g.</p>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
+  <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">icon</span><span class="p p-Indicator">:</span> <span class="s">&#39;cloud&#39;</span>
+</pre></div>
+
 <h3 id="adding-social-links">Adding social links<a class="headerlink" href="#adding-social-links" title="Permanent link">&para;</a></h3>
 <p>Social accounts can be linked in the footer of the documentation using the
 automatically included <a href="http://fontawesome.io/icons/">FontAwesome</a> webfont. The <code>type</code> must denote the
@@ -1132,7 +1155,7 @@ name of the social service, e.g. <code>github</code>, <code>twitter</code> or <c
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;twitter&#39;</span>
       <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://twitter.com/squidfunk&#39;</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;linkedin&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://de.linkedin.com/in/martin-donath-20a95039&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://linkedin.com/in/squidfunk&#39;</span>
 </pre></div>
 
 <p>The links are generated in order and the <code>type</code> of the links must match the
@@ -1156,11 +1179,13 @@ in your <code>mkdocs.yml</code>:</p>
   <span class="l l-Scalar l-Scalar-Plain">disqus</span><span class="p p-Indicator">:</span> <span class="s">&#39;your-disqus-shortname&#39;</span>
 </pre></div>
 
-<p>A new entry at the bottom of the table of contents is generated that is linking
-to the comments section. The necessary JavaScript is automatically included.</p>
+<p>The comments section is inserted in <em>every page, except the index page</em>.
+Additionally, a new entry at the bottom of the table of contents is generated
+that is linking to the comments section. The necessary JavaScript is
+automatically included.</p>
 <div class="admonition warning">
 <p class="admonition-title">Requirements</p>
-<p><code>site_url</code> value must be set in <code>mkdocs.yml</code> for the Discus integration to
+<p><code>site_url</code> value must be set in <code>mkdocs.yml</code> for the Disqus integration to
 load properly.</p>
 </div>
 <h3 id="localization">Localization<a class="headerlink" href="#localization" title="Permanent link">&para;</a></h3>
@@ -1182,6 +1207,7 @@ macro <code>t</code>:</p>
   <span class="s2">&quot;search.result.none&quot;</span><span class="o">:</span> <span class="s2">&quot;No matching documents&quot;</span><span class="o">,</span>
   <span class="s2">&quot;search.result.one&quot;</span><span class="o">:</span> <span class="s2">&quot;1 matching document&quot;</span><span class="o">,</span>
   <span class="s2">&quot;search.result.other&quot;</span><span class="o">:</span> <span class="s2">&quot;# matching documents&quot;</span><span class="o">,</span>
+  <span class="s2">&quot;search.tokenizer&quot;</span><span class="o">:</span> <span class="s2">&quot;[\s\-]+&quot;</span><span class="o">,</span>
   <span class="s2">&quot;source.link.title&quot;</span><span class="o">:</span> <span class="s2">&quot;Go to repository&quot;</span><span class="o">,</span>
   <span class="s2">&quot;toc.title&quot;</span><span class="o">:</span> <span class="s2">&quot;Table of contents&quot;</span>
 <span class="o">}[</span><span class="nv">key</span><span class="o">]</span> <span class="cp">}}{%</span> <span class="k">endmacro</span> <span class="cp">%}</span><span class="x"></span>
@@ -1217,6 +1243,15 @@ Norwegian <code>no</code>, Swedish <code>sv</code> and Turkish <code>tr</code>.<
 JavaScript payload by around 20kb (without gzip) and by another 15-30kb per
 language.</p>
 </div>
+<p>The separator for tokenization can also be customized, which makes it possible
+to index parts of words that are separated by <code>-</code> or <code>.</code> for example:</p>
+<div class="codehilite"><pre><span></span><span class="cp">{%</span> <span class="k">macro</span> <span class="nv">t</span><span class="o">(</span><span class="nv">key</span><span class="o">)</span> <span class="cp">%}{{</span> <span class="o">{</span>
+  <span class="err">...</span>
+  <span class="s2">&quot;search.tokenizer&quot;</span><span class="o">:</span> <span class="s2">&quot;[\s\-\.]+&quot;</span><span class="o">,</span>
+  <span class="err">...</span>
+<span class="o">}[</span><span class="nv">key</span><span class="o">]</span> <span class="cp">}}{%</span> <span class="k">endmacro</span> <span class="cp">%}</span><span class="x"></span>
+</pre></div>
+
 <h3 id="tabs">Tabs<a class="headerlink" href="#tabs" title="Permanent link">&para;</a></h3>
 <p>From version 1.1.0 on, Material supports another layer on top of the main
 navigation for larger screens in the form of tabs. This is especially useful
@@ -1283,7 +1318,7 @@ Material theme including more information regarding installation and usage:</p>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;twitter&#39;</span>
       <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://twitter.com/john-doe&#39;</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;linkedin&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://de.linkedin.com/in/john-doe&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://linkedin.com/in/john-doe&#39;</span>
 
 <span class="c1"># Google Analytics</span>
 <span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span>
@@ -1362,7 +1397,7 @@ Material theme including more information regarding installation and usage:</p>
       
     </div>
     
-      <script src="../assets/javascripts/application-4b954faba0.js"></script>
+      <script src="../assets/javascripts/application-ee5842b7dc.js"></script>
       
       
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>

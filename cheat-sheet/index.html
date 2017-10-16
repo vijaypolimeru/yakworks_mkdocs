@@ -11,7 +11,7 @@
         <meta name="description" content="A Material Design Components theme for MkDocs">
       
       
-        <link rel="canonical" href="http://9ci.github.io/mkdocs-material-components/cheat-sheet/">
+        <link rel="canonical" href="http://yakworks.github.io/mkdocs-material-components/cheat-sheet/">
       
       
         <meta name="author" content="Joshua Burnett">
@@ -19,20 +19,20 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.7.9">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.3">
     
     
       
-        <title>Cheat Sheet - Material Design Components for MkDocs</title>
+        <title>Cheat Sheet - MkDocs Material Components Theme</title>
       
     
     
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-31d9ee8b19.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-a9f1482a76.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-b778559f56.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-035c261bc5.palette.css">
       
       <link rel="stylesheet" href="../assets/stylesheets/material-components-web.min.css">
       <link rel="stylesheet" href="../assets/stylesheets/mdc-web.css">
@@ -42,8 +42,8 @@
         
         
         
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Ubuntu+Mono">
+        <style>body,input{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
       
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -76,10 +76,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://9ci.github.io/mkdocs-material-components/" title="Material Design Components for MkDocs" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components Theme" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -87,6 +88,7 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
+            MkDocs Material Components Theme -
             
               
             
@@ -98,17 +100,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -129,7 +131,7 @@
   
 
 
-  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -138,7 +140,7 @@
       </div>
     
     <div class="md-source__repository">
-      9ci/mkdocs-material-components
+      yakworks/mkdocs-material-components
     </div>
   </a>
 
@@ -153,6 +155,7 @@
     <div class="md-container">
       
       
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -162,10 +165,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
-    Material Design Components for MkDocs
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
+    MkDocs Material Components Theme
   </label>
   
     <div class="md-nav__source">
@@ -175,7 +180,7 @@
   
 
 
-  <a href="https://github.com/9ci/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/yakworks/mkdocs-material-components" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -184,7 +189,7 @@
       </div>
     
     <div class="md-source__repository">
-      9ci/mkdocs-material-components
+      yakworks/mkdocs-material-components
     </div>
   </a>
 
@@ -198,8 +203,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Index" class="md-nav__link">
-      Index
+    <a href=".." title="Intro" class="md-nav__link">
+      Intro
     </a>
   </li>
 
@@ -233,7 +238,7 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -581,7 +586,7 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
+    <label class="md-nav__title md-nav__toc" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -689,10 +694,11 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/9ci/mkdocs-material-components/edit/material-components-web/docs/cheat-sheet.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
+                  <a href="https://github.com/yakworks/mkdocs-material-components/edit/material-components-web/docs/cheat-sheet.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h2 id="tldr-cheat-sheet">TL;DR Cheat Sheet<a class="headerlink" href="#tldr-cheat-sheet" title="Permanent link">&para;</a></h2>
+                
+                <h1 id="tldr-cheat-sheet">TL;DR Cheat Sheet<a class="headerlink" href="#tldr-cheat-sheet" title="Permanent link">&para;</a></h1>
 <p>For a 60 second quick start on Markdown
 <a class="new-tab" href="http://commonmark.org/help/">commonmark has a great tutorial</a></p>
 <h3 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link">&para;</a></h3>
@@ -868,7 +874,7 @@ mail link with emoji [<span class="nt">📧</span>](<span class="na">mailto:josh
 links with icons [<span class="nt">like this _cloud_{.icon}</span>](<span class="na">https://material.io/icons/</span>)
 or [<span class="nt">use an image ![</span>](<span class="na">images/dingus/image-small.png</span>)](images/dingus/image.png)
 
-[Reference-Style Links][daringfireball reference id]
+[Reference-Style Links][some reference id]
 put link at bottom of paragraph or page.
 you can use numbers or text for
 [reference-style link definitions][1]  
@@ -883,7 +889,7 @@ Indenting <span class="ge">_reference links_</span>
 2 spaces is not required
 but a recommended convention
 
-  [daringfireball reference id]: https://daringfireball.net/projects/markdown/syntax#link
+  [some reference id]: https://daringfireball.net/projects/markdown/syntax#link
   [1]: http://reason.com/blog
   [link text itself]: ./images/material.png
   [new tab]: sandbox.md
@@ -916,10 +922,13 @@ required but a recommended convention</p>
 <div class="codehilite"><pre><span></span>inline ![](images/dingus/image-small.png)
 with alt text ![<span class="nt">foo</span>](<span class="na">images/dingus/image-small.png</span>)  
 with ref links ![img-small][]  
-can use [<span class="nt">sizing attributes</span>](<span class="na">blocks/#sizing-alignment</span>)  
-Use <span class="gs">**zoomify**</span>  ![zoomify][img-dingus]{.tiny}
+can use [<span class="nt">sizing attributes</span>](<span class="na">blocks/#sizing-alignment</span>)
 
-![<span class="nt">zoomify</span>](<span class="na">images/dingus/image.png</span>){.center .small}
+Put <span class="sb">`zoomify`</span> in the alt text bracket to enable
+clicking to zoom. Try clicking on any of 
+these images ![zoomify][img-dingus]{.tiny}
+
+![<span class="nt">zoomify</span>](<span class="na">images/dingus/image.png</span>){.center .xsmall}
 
 <span class="k">&gt; </span><span class="ge">:camera: **Figure Title**</span>
 <span class="k">&gt; </span><span class="ge">![zoomify](images/dingus/image.png){.center .small}</span>
@@ -934,8 +943,8 @@ Use <span class="gs">**zoomify**</span>  ![zoomify][img-dingus]{.tiny}
 with alt text <img alt="foo" src="../images/dingus/image-small.png" /><br />
 with ref links <img alt="img-small" src="../images/dingus/image-small.png" /><br />
 can use <a href="../blocks/#sizing-alignment">sizing attributes</a></p>
-<p>Use zoomify in alt text to get
-click to zoom <img alt="zoomify" class="tiny" src="../images/dingus/image.png" /></p>
+<p>Put <code>zoomify</code> in the alt text bracket to enable
+clicking to zoom. Try it on any of these images <img alt="zoomify" class="tiny" src="../images/dingus/image.png" /></p>
 <p><img alt="zoomify" class="center xsmall" src="../images/dingus/image.png" /></p>
 <blockquote>
 <p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Figure Title</strong>
@@ -949,17 +958,17 @@ click to zoom <img alt="zoomify" class="tiny" src="../images/dingus/image.png" /
 HTML and FUBAR
 
 &gt;:bulb: if your editor gets confused by
-not having and enclosing <span class="ge">* then</span>
-<span class="ge">just add it to end of abbr def.</span>
+not having and enclosing * then
+just add it to end of abbr def.
 
-<span class="ge">---</span>
+---
 
-<span class="ge">&gt;:warning: Don&#39;t indent these, doesn&#39;t seem to work</span>
+&gt;:warning: Don&#39;t indent these, doesn&#39;t seem to work
 
-<span class="ge">*</span>[abbr]: Abbreviations
-<span class="ge">*[def]: Definition</span>
-<span class="ge">*</span>[HTML]: Hyper Text Markup Language
-<span class="ge">*[FUBAR]:  You know what it means*</span>
+*[abbr]: Abbreviations
+*[def]: Definition
+*[HTML]: Hyper Text Markup Language
+*[FUBAR]:  You know what it means*
 </pre></div>
 
 </div>
@@ -1016,13 +1025,13 @@ You can also use inline Markdown.
 | -------- |:-------------:| ---------:|
 | col 3 is | right-aligned |     $1600 |
 | col 2 is |   centered    |       $12 |
-|          |   <span class="gs">**Total**   |   **$1612**</span> |
+|          |   **Total**   |   **$1612** |
 
-==Table== | <span class="gs">**Format**</span> | 👀 <span class="ge">_scramble_</span>
+==Table== | **Format** | 👀 _scramble_
 --- | --- | ---
-<span class="ge">*Still*</span> | <span class="sb">`renders`</span> | <span class="gs">**nicely**</span>
-[<span class="nt">with links</span>](<span class="na">images/dingus/image-small.png</span>) | images ![<span class="nt">zoomify</span>](<span class="na">images/dingus/image-small.png</span>){.tiny} | emojis 🍔
-icons <span class="ge">_cloud_</span>{.icon} | footnotes[^1] | use <span class="sb">`&lt;br&gt;`</span> &lt;br&gt; for multi-line &lt;br&gt; line breaks
+*Still* | `renders` | **nicely**
+[with links](images/dingus/image-small.png) | images ![zoomify](images/dingus/image-small.png){.tiny} | emojis 🍔
+icons _cloud_{.icon} | footnotes[^1] | use `&lt;br&gt;` &lt;br&gt; for multi-line &lt;br&gt; line breaks
 </pre></div>
 
 </div>
@@ -1089,23 +1098,23 @@ You can also use inline Markdown.</p>
 <hr />
 <h3 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h3>
 <div class="two-column">
-<div class="codehilite"><pre><span></span><span class="k">&gt; </span><span class="ge">Blockquotes are handy to callout text.</span>
+<div class="codehilite"><pre><span></span>&gt; Blockquotes are handy to callout text.
 they are greedy and will keep
 grabbing text. The &#39;&gt;&#39; is optional unless trying join
-<span class="k">&gt;</span>
-<span class="ge">paragraphs, tables etc.</span>
+&gt;
+paragraphs, tables etc.
 
 a blank line and a new paragraph
 or other markdown thing end them
 
 &gt;:bulb:
-use a <span class="sb">`---`</span> seperator or <span class="sb">`&lt;br&gt;`</span>
+use a `---` seperator or `&lt;br&gt;`
 if you want multiple sepearte block quotes
 
 ---
 
-<span class="k">&gt; </span><span class="ge">can have nested</span>
-<span class="k">&gt; </span><span class="ge">&gt; blockquotes inside of block quotes</span>
+&gt; can have nested
+&gt; &gt; blockquotes inside of block quotes
 block quotes can also contain any valid markdown
 </pre></div>
 
@@ -1137,19 +1146,19 @@ block quotes can also contain any valid markdown</p>
 <hr />
 <h3 id="blocks-admonitions-callouts-sidebars">Blocks - admonitions, callouts, sidebars<a class="headerlink" href="#blocks-admonitions-callouts-sidebars" title="Permanent link">&para;</a></h3>
 <div class="two-column">
-<div class="codehilite"><pre><span></span><span class="k">&gt; </span><span class="ge">:memo: **Memo Admonition**</span>
+<div class="codehilite"><pre><span></span>&gt; :memo: **Memo Admonition**
 use blockquotes
 with emoji indicators for
 admonition memos, callout etc..
 
 ---
 
-<span class="k">&gt; </span><span class="ge">:boom:</span>
+&gt; :boom:
 Title title like above is optional
 
 ---
 
-<span class="k">&gt; </span><span class="ge">:bulb: See [the section about blocks](blocks.md#cheatsheet)</span>
+&gt; :bulb: See [the section about blocks](blocks.md#cheatsheet)
 for the list of emojis that can be used.
 </pre></div>
 
@@ -1178,7 +1187,7 @@ for the list of emojis that can be used.</p>
 <div class="codehilite"><pre><span></span>&lt;div markdown=&quot;1&quot; class=&quot;two-column&quot;&gt;<ins class="critic">markdown=&quot;1&quot; tells it to process what inside</ins>
     <mark class="critic"> &lt;-needs to be a blank line for github to parse</mark>
 
-``` md
+```markdown
 |foo | bar |
 |----|-----|
 |baz | buzz|
@@ -1243,7 +1252,7 @@ and as you can see the heights get adjusted to be equal as well
 
 <div class="row">
 <blockquote>
-<p><img alt="🐛" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <strong>here is another example</strong>
+<p><img alt="🐛" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <strong>here is another example</strong><br />
 well just use admonitions and a table</p>
 </blockquote>
 <hr />
@@ -1259,10 +1268,10 @@ and as you can see the heights get adjusted to be equal as well</p>
 <div class="row">
 <blockquote>
 <p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
-<div class="codehilite"><pre><span></span><span class="gh">#</span> h1 Heading
-<span class="gu">##</span> h2 Heading
-<span class="gu">###</span> h3 Heading
-<span class="gu">####</span> h4 Heading
+<div class="codehilite"><pre><span></span># h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
 
 Horizontal Rules
 
@@ -1313,7 +1322,7 @@ Horizontal Rules
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Intro" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1322,7 +1331,7 @@ Horizontal Rules
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Index
+                Intro
               </span>
             </div>
           </a>
@@ -1361,7 +1370,7 @@ Horizontal Rules
       
     </div>
     
-      <script src="../assets/javascripts/application-4b954faba0.js"></script>
+      <script src="../assets/javascripts/application-ee5842b7dc.js"></script>
       
       
       <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
