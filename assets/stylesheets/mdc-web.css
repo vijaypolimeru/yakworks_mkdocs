@@ -178,12 +178,16 @@ blockquote.float-right :last-child, blockquote.float-left :last-child {
   overflow-x: inherit;
 }
 
+.figure > :first-child{
+  margin-bottom: 2px;
+}
+
 /** sidebars and figures shrink to fit **/
 .card.sidebar,
 .figure {
   /*display: inline-block;*/
   margin-top: 0;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
 }
 
 .card.sidebar{
