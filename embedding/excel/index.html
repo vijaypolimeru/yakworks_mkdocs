@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../../images/logo_white.png" width="36" height="36">
-            
+            <img src="../../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -173,9 +171,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -557,25 +553,25 @@
 <li>Click 'generate' button.<ul>
 <li>
 <blockquote>
-<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> You can then just copy the iframe code in the text box
+<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> You can then just copy the iframe code in the text box
 and paste it in to your document if desired but will loose the cleaned up advanced features you get below.</p>
 </blockquote>
 </li>
 </ul>
 </li>
-<li>At bottom of panel click <code>Customize how this embedded workbook</code>.</li>
-<li>In new window click the <code>javascript</code> tab next to "Embed Code" above the textbox. If it does not exist then skip the rest of this one</li>
+<li>At bottom of panel click <code class="codehilite">Customize how this embedded workbook</code>.</li>
+<li>In new window click the <code class="codehilite">javascript</code> tab next to "Embed Code" above the textbox. If it does not exist then skip the rest of this one</li>
 <li>copy &amp; paste the code into a text editor so you can read it as the textbox is stupidly small</li>
-<li>about 12 lines down locate the <code>var fileToken = ....</code> and copy the long code inside the quotes but don't copy the quotes themselves</li>
-<li>paste it into a divs <code>data-excel-token</code> attribute as seen in the html example below</li>
+<li>about 12 lines down locate the <code class="codehilite">var fileToken = ....</code> and copy the long code inside the quotes but don't copy the quotes themselves</li>
+<li>paste it into a divs <code class="codehilite">data-excel-token</code> attribute as seen in the html example below</li>
 </ol>
 <p><strong>Newer version of Onedrive</strong></p>
 <ol>
-<li>If no javascript tab exists then we will need to consruct the file id token. as can be seen in the examples above and below it will look like so <code>SD{resid}/{Flight.cid}/t=0&amp;s=0{authkey}</code></li>
-<li>you'll need to copy the URL from the iframe embed code. It will look something like this <code>https://onedrive.live.com/embed?resid=F4E541E7F8747E1B%21395&amp;authkey=%21AAg4KxjLcMu-9W0&amp;em=2</code></li>
+<li>If no javascript tab exists then we will need to consruct the file id token. as can be seen in the examples above and below it will look like so <code class="codehilite">SD{resid}/{Flight.cid}/t=0&amp;s=0{authkey}</code></li>
+<li>you'll need to copy the URL from the iframe embed code. It will look something like this <code class="codehilite">https://onedrive.live.com/embed?resid=F4E541E7F8747E1B%21395&amp;authkey=%21AAg4KxjLcMu-9W0&amp;em=2</code></li>
 <li>Paste that into a new browser tab and let the spreadsheet render. Then "view-&gt;developer-&gt;view source" to see the page source.</li>
 <li>Search for "Flight=" (should be around line 14) and copy the value from "cid":"-800160894226760165" and save it. This value should not change for your one drive so you'll only have to get this Flight.cid value once. </li>
-<li>construct the token from the embed URL's resid and authkey along with the flight.cid you found in the source. <code>SD{resid}/{Flight.cid}/t=0&amp;s=0{authkey}</code>. so using the values from above we get <code>SDF4E541E7F8747E1B!395/-800160894226760165/t=0&amp;s=0&amp;v=!AAg4KxjLcMu-9W0</code> NOTE: the escaped <code>%21</code> can be replaced with a <code>!</code></li>
+<li>construct the token from the embed URL's resid and authkey along with the flight.cid you found in the source. <code class="codehilite">SD{resid}/{Flight.cid}/t=0&amp;s=0{authkey}</code>. so using the values from above we get <code class="codehilite">SDF4E541E7F8747E1B!395/-800160894226760165/t=0&amp;s=0&amp;v=!AAg4KxjLcMu-9W0</code> NOTE: the escaped <code class="codehilite"><span class="c">%21</span></code> can be replaced with a <code class="codehilite">!</code></li>
 </ol>
 <p><strong>simple example</strong></p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span>
@@ -673,6 +669,10 @@ class="center">
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>

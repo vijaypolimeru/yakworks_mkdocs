@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../images/logo_white.png" width="36" height="36">
-            
+            <img src="../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -169,9 +167,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -719,7 +715,7 @@ this is <span class="gs">__bold__</span> and so is <span class="gs">**this**</sp
 <p>this is <em>italic</em> and so is <em>this</em><br />
 this is <strong>bold</strong> and so is <strong>this</strong><br />
 <ins>underline</ins>,  <del>strike through</del><br />
-<mark>highlight</mark>  and <code>inline code</code><br />
+<mark>highlight</mark>  and <code class="codehilite">inline code</code><br />
 <mark><em>you</em> <strong>can</strong> <ins>combine</ins> <del>too</del></mark></p>
 </div>
 <hr />
@@ -746,7 +742,7 @@ don't use 2 spaces
 it merges the lines
 like this <br>
 You can also force a break <br> anywhere
-using the <code>&lt;br&gt;</code> tag like we just did</p>
+using the <code class="codehilite">&lt;br&gt;</code> tag like we just did</p>
 </div>
 <hr />
 <h3 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h3>
@@ -782,7 +778,7 @@ using the <code>&lt;br&gt;</code> tag like we just did</p>
 <ul>
 <li>need a blank line above to start new list</li>
 <li>valid bullet symbols</li>
-<li><code>*</code>, <code>-</code> or '+'<ul>
+<li><code class="codehilite">*</code>, <code class="codehilite">-</code> or '+'<ul>
 <li>4 spaces or 1 tab</li>
 <li>to indent</li>
 </ul>
@@ -809,7 +805,7 @@ or a tab</p>
 <li>
 <p>you can add blocks too</p>
 <blockquote>
-<p><img alt="📝" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /></p>
+<p><img align="absmiddle" alt="📝" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" width="20px" /></p>
 <ul>
 <li>list under lists</li>
 <li>under lists</li>
@@ -840,7 +836,7 @@ or a tab</p>
 </div>
 <div class="two-column">
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Task Lists <code>- [ ]</code><ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Task Lists <code class="codehilite">- [ ]</code><ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> x instead of space</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> will mark it complete</li>
 </ul>
@@ -917,7 +913,7 @@ you can use numbers or text for
 or leave it empty and
 just use the <a href="../images/material.png">link text itself</a>  </p>
 <p>to <a class="new-tab" href="sandbox.md">open in new tab</a>
-us <code>{target=_blank} or {.new-tab}</code> attributes
+us <code class="codehilite">{target=_blank} or {.new-tab}</code> attributes
 use it on <a class="new-tab" href="sandbox.md">ref links</a> too</p>
 <p><em>reference links</em> can be at bottom
 of paragraph. Indenting 2 spaces is not
@@ -950,11 +946,11 @@ these images ![zoomify][img-dingus]{.tiny}
 with alt text <img alt="foo" src="../images/dingus/image-small.png" /><br />
 with ref links <img alt="img-small" src="../images/dingus/image-small.png" /><br />
 can use <a href="../blocks/#sizing-alignment">sizing attributes</a></p>
-<p>Put <code>zoomify</code> in the alt text bracket to enable
+<p>Put <code class="codehilite">zoomify</code> in the alt text bracket to enable
 clicking to zoom. Try it on any of these images <img alt="zoomify" class="tiny" src="../images/dingus/image.png" /></p>
 <p><img alt="zoomify" class="center xsmall" src="../images/dingus/image.png" /></p>
 <blockquote>
-<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /> <strong>Figure Title</strong>
+<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /> <strong>Figure Title</strong>
 <img alt="zoomify" class="center small" src="../images/dingus/image.png" /></p>
 </blockquote>
 </div>
@@ -983,13 +979,13 @@ just add it to end of abbr def.
 <p>here are some <abbr title="Abbreviations">abbr</abbr>'s
 <abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="You know what it means*">FUBAR</abbr></p>
 <blockquote>
-<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> if your editor gets confused by
+<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> if your editor gets confused by
 not having and enclosing * then
 just add it to end of <abbr title="Abbreviations">abbr</abbr> <abbr title="Definition">def</abbr>.</p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img alt="⚠️" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" /> Don't indent these, doesn't seem to work</p>
+<p><img align="absmiddle" alt="⚠️" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" title=":warning:" width="20px" /> Don't indent these, doesn't seem to work</p>
 </blockquote>
 </div>
 <hr />
@@ -1021,24 +1017,24 @@ of paragraph or page.</p>
 <hr />
 <h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
 <div class="two-column">
-<div class="codehilite"><pre><span></span>Colons can be used to align columns.
-3 dashes min to separate headers.
-Outer pipes (|) are optional,
-and you don&#39;t need to make the
-raw Markdown line up prettily.
-You can also use inline Markdown.
+<div class="codehilite"><pre><span></span><span class="nv">Colons</span> <span class="s s-Atom">can</span> <span class="s s-Atom">be</span> <span class="s s-Atom">used</span> <span class="s s-Atom">to</span> <span class="s s-Atom">align</span> <span class="s s-Atom">columns</span><span class="p">.</span>
+<span class="mi">3</span> <span class="s s-Atom">dashes</span> <span class="s s-Atom">min</span> <span class="s s-Atom">to</span> <span class="s s-Atom">separate</span> <span class="s s-Atom">headers</span><span class="p">.</span>
+<span class="nv">Outer</span> <span class="nf">pipes</span> <span class="p">(|)</span> <span class="s s-Atom">are</span> <span class="s s-Atom">optional</span><span class="p">,</span>
+<span class="s s-Atom">and</span> <span class="s s-Atom">you</span> <span class="s s-Atom">don</span><span class="err">&#39;</span><span class="s s-Atom">t</span> <span class="s s-Atom">need</span> <span class="s s-Atom">to</span> <span class="s s-Atom">make</span> <span class="s s-Atom">the</span>
+<span class="s s-Atom">raw</span> <span class="nv">Markdown</span> <span class="s s-Atom">line</span> <span class="s s-Atom">up</span> <span class="s s-Atom">prettily</span><span class="p">.</span>
+<span class="nv">You</span> <span class="s s-Atom">can</span> <span class="s s-Atom">also</span> <span class="s s-Atom">use</span> <span class="s s-Atom">inline</span> <span class="nv">Markdown</span><span class="p">.</span>
 
-|  Tables  |      Are      |   Cool    |
-| -------- |:-------------:| ---------:|
-| col 3 is | right-aligned |     $1600 |
-| col 2 is |   centered    |       $12 |
-|          |   **Total**   |   **$1612** |
+<span class="p">|</span>  <span class="nv">Tables</span>  <span class="p">|</span>      <span class="nv">Are</span>      <span class="p">|</span>   <span class="nv">Cool</span>    <span class="p">|</span>
+<span class="p">|</span> <span class="s s-Atom">--------</span> <span class="p">|:-</span><span class="s s-Atom">------------:</span><span class="p">|</span> <span class="s s-Atom">---------:</span><span class="p">|</span>
+<span class="p">|</span> <span class="s s-Atom">col</span> <span class="mi">3</span> <span class="o">is</span> <span class="p">|</span> <span class="s s-Atom">right</span><span class="o">-</span><span class="s s-Atom">aligned</span> <span class="p">|</span>     <span class="err">$</span><span class="mi">1600</span> <span class="p">|</span>
+<span class="p">|</span> <span class="s s-Atom">col</span> <span class="mi">2</span> <span class="o">is</span> <span class="p">|</span>   <span class="s s-Atom">centered</span>    <span class="p">|</span>       <span class="err">$</span><span class="mi">12</span> <span class="p">|</span>
+<span class="p">|</span>          <span class="p">|</span>   <span class="s s-Atom">**</span><span class="nv">Total</span><span class="s s-Atom">**</span>   <span class="p">|</span>   <span class="s s-Atom">**</span><span class="err">$</span><span class="mi">1612</span><span class="s s-Atom">**</span> <span class="p">|</span>
 
-==Table== | **Format** | 👀 _scramble_
---- | --- | ---
-*Still* | `renders` | **nicely**
-[with links](images/dingus/image-small.png) | images ![zoomify](images/dingus/image-small.png){.tiny} | emojis 🍔
-icons _cloud_{.icon} | footnotes[^1] | use `&lt;br&gt;` &lt;br&gt; for multi-line &lt;br&gt; line breaks
+<span class="o">==</span><span class="nv">Table</span><span class="o">==</span> <span class="p">|</span> <span class="s s-Atom">**</span><span class="nv">Format</span><span class="s s-Atom">**</span> <span class="p">|</span> <span class="err">👀</span> <span class="k">_</span><span class="s s-Atom">scramble_</span>
+<span class="s s-Atom">---</span> <span class="p">|</span> <span class="s s-Atom">---</span> <span class="p">|</span> <span class="s s-Atom">---</span>
+<span class="o">*</span><span class="nv">Still</span><span class="o">*</span> <span class="p">|</span> <span class="err">`</span><span class="s s-Atom">renders</span><span class="err">`</span> <span class="p">|</span> <span class="s s-Atom">**nicely**</span>
+<span class="p">[</span><span class="s s-Atom">with</span> <span class="s s-Atom">links</span><span class="p">](</span><span class="s s-Atom">images</span><span class="o">/</span><span class="s s-Atom">dingus</span><span class="o">/</span><span class="s s-Atom">image</span><span class="o">-</span><span class="s s-Atom">small</span><span class="p">.</span><span class="s s-Atom">png</span><span class="p">)</span> <span class="p">|</span> <span class="s s-Atom">images</span> <span class="p">![</span><span class="s s-Atom">zoomify</span><span class="p">](</span><span class="s s-Atom">images</span><span class="o">/</span><span class="s s-Atom">dingus</span><span class="o">/</span><span class="s s-Atom">image</span><span class="o">-</span><span class="s s-Atom">small</span><span class="p">.</span><span class="s s-Atom">png</span><span class="p">){.</span><span class="s s-Atom">tiny</span><span class="p">}</span> <span class="p">|</span> <span class="s s-Atom">emojis</span> <span class="err">🍔</span>
+<span class="s s-Atom">icons</span> <span class="k">_</span><span class="s s-Atom">cloud_</span><span class="p">{.</span><span class="s s-Atom">icon</span><span class="p">}</span> <span class="p">|</span> <span class="s s-Atom">footnotes</span><span class="p">[</span><span class="s s-Atom">^</span><span class="mi">1</span><span class="p">]</span> <span class="p">|</span> <span class="s s-Atom">use</span> <span class="err">`</span><span class="o">&lt;</span><span class="s s-Atom">br&gt;</span><span class="err">`</span> <span class="o">&lt;</span><span class="s s-Atom">br</span><span class="o">&gt;</span> <span class="s s-Atom">for</span> <span class="s s-Atom">multi</span><span class="o">-</span><span class="s s-Atom">line</span> <span class="o">&lt;</span><span class="s s-Atom">br</span><span class="o">&gt;</span> <span class="s s-Atom">line</span> <span class="s s-Atom">breaks</span>
 </pre></div>
 
 </div>
@@ -1086,7 +1082,7 @@ You can also use inline Markdown.</p>
 <tbody>
 <tr>
 <td><em>Still</em></td>
-<td><code>renders</code></td>
+<td><code class="codehilite">renders</code></td>
 <td><strong>nicely</strong></td>
 </tr>
 <tr>
@@ -1097,7 +1093,7 @@ You can also use inline Markdown.</p>
 <tr>
 <td>icons <em class="icon">cloud</em></td>
 <td>footnotes<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></td>
-<td>use <code>&lt;br&gt;</code> <br> for multi-line <br> line breaks</td>
+<td>use <code class="codehilite">&lt;br&gt;</code> <br> for multi-line <br> line breaks</td>
 </tr>
 </tbody>
 </table>
@@ -1136,8 +1132,8 @@ grabbing text. The '&gt;' is optional unless trying join</p>
 <p>a blank line and a new paragraph
 or other markdown thing end them</p>
 <blockquote>
-<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" />
-use a <code>---</code> seperator or <code>&lt;br&gt;</code>
+<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" />
+use a <code class="codehilite">---</code> seperator or <code class="codehilite">&lt;br&gt;</code>
 if you want multiple seperate block quotes
 to follow</p>
 </blockquote>
@@ -1172,42 +1168,42 @@ for the list of emojis that can be used.
 </div>
 <div class="two-column">
 <blockquote>
-<p><img alt="📝" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" /> <strong>Memo Admonition</strong>
+<p><img align="absmiddle" alt="📝" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4dd.png" title=":memo:" width="20px" /> <strong>Memo Admonition</strong>
 use blockquotes
 with emoji indicators for
 admonition memos, callout etc..</p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img alt="💥" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" />
+<p><img align="absmiddle" alt="💥" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a5.png" title=":boom:" width="20px" />
 Title title like above is optional</p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> See <a href="../blocks/#cheatsheet">the section about blocks</a>
+<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> See <a href="../blocks/#cheatsheet">the section about blocks</a>
 for the list of emojis that can be used.</p>
 </blockquote>
 </div>
 <hr />
 <h3 id="row-divs">Row Divs<a class="headerlink" href="#row-divs" title="Permanent link">&para;</a></h3>
-<p>through out this doc we have been using a <code>&lt;div markdown=&quot;1&quot; class=&quot;two-column&quot;&gt;</code>.</p>
-<div class="codehilite"><pre><span></span>&lt;div markdown=&quot;1&quot; class=&quot;two-column&quot;&gt;<ins class="critic">markdown=&quot;1&quot; tells it to process what inside</ins>
-    <mark class="critic"> &lt;-needs to be a blank line for github to parse</mark>
+<p>through out this doc we have been using a <code class="codehilite">&lt;div markdown=&quot;1&quot; class=&quot;two-column&quot;&gt;</code>.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;div</span> <span class="na">markdown=</span><span class="s">&quot;1&quot;</span> <span class="na">class=</span><span class="s">&quot;two-column&quot;</span><span class="nt">&gt;</span><ins class="critic">markdown=&quot;1&quot; tells it to process what inside</ins>
+    <mark class="critic"> <span class="nt">&lt;-needs</span> <span class="err">to</span> <span class="err">be</span> <span class="err">a</span> <span class="err">blank</span> <span class="err">line</span> <span class="err">for</span> <span class="err">github</span> <span class="err">to</span> <span class="err">parse</mark></span>
 
-```markdown
+<span class="err">```markdown</span>
+<span class="err">|foo</span> <span class="err">|</span> <span class="err">bar</span> <span class="err">|</span>
+<span class="err">|----|-----|</span>
+<span class="err">|baz</span> <span class="err">|</span> <span class="err">buzz|</span>
+<span class="err">```</span>
+
+<span class="err">&lt;/div</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">markdown=</span><span class="s">&quot;1&quot;</span> <span class="na">class=</span><span class="s">&quot;two-column&quot;</span><span class="nt">&gt;</span>
+
 |foo | bar |
 |----|-----|
 |baz | buzz|
-```
 
-&lt;/div&gt;
-&lt;div markdown=&quot;1&quot; class=&quot;two-column&quot;&gt;
-
-|foo | bar |
-|----|-----|
-|baz | buzz|
-
-&lt;/div&gt;  <mark class="critic"> closes the div </mark>
+<span class="nt">&lt;/div&gt;</span>  <mark class="critic"> closes the div </mark>
 
 --- <mark class="critic"> this clears the &quot;float&quot; REQUIRED when done</mark>
 </pre></div>
@@ -1237,7 +1233,7 @@ for the list of emojis that can be used.</p>
 </table>
 </div>
 <hr />
-<div class="codehilite"><pre><span></span>&lt;div markdown=&quot;1&quot; class=&quot;row&quot;&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;div</span> <span class="na">markdown=</span><span class="s">&quot;1&quot;</span> <span class="na">class=</span><span class="s">&quot;row&quot;</span><span class="nt">&gt;</span>
 
 &gt; :bug: **here is another example**
 this uses the row class and will make
@@ -1253,18 +1249,18 @@ and as you can see the heights get adjusted to be equal as well
 
 ![](images/dingus/image.png){.small}
 
-&lt;/div&gt;
+<span class="nt">&lt;/div&gt;</span>
 </pre></div>
 
 
 <div class="row">
 <blockquote>
-<p><img alt="🐛" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" /> <strong>here is another example</strong><br />
+<p><img align="absmiddle" alt="🐛" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f41b.png" title=":bug:" width="20px" /> <strong>here is another example</strong><br />
 well just use admonitions and a table</p>
 </blockquote>
 <hr />
 <blockquote>
-<p><img alt="👍" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" /> they will be equal sizes
+<p><img align="absmiddle" alt="👍" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" title=":thumbsup:" width="20px" /> they will be equal sizes
 with whatever width is left from image
 and as you can see the heights get adjusted to be equal as well</p>
 </blockquote>
@@ -1274,7 +1270,7 @@ and as you can see the heights get adjusted to be equal as well</p>
 <h3 id="headings-breaks">Headings &amp; Breaks<a class="headerlink" href="#headings-breaks" title="Permanent link">&para;</a></h3>
 <div class="row">
 <blockquote>
-<p><img alt="📷" class="gemoji pct50" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<p><img align="absmiddle" alt="📷" class="gemoji pct50" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /></p>
 <div class="codehilite"><pre><span></span># h1 Heading
 ## h2 Heading
 ### h3 Heading
@@ -1288,7 +1284,7 @@ Horizontal Rules
 </blockquote>
 <hr />
 <blockquote>
-<p><img alt="📷" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" /></p>
+<p><img align="absmiddle" alt="📷" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4f7.png" title=":camera:" width="20px" /></p>
 <h1 id="h1-heading">h1 Heading<a class="headerlink" href="#h1-heading" title="Permanent link">&para;</a></h1>
 <h2 id="h2-heading">h2 Heading<a class="headerlink" href="#h2-heading" title="Permanent link">&para;</a></h2>
 <h3 id="h3-heading">h3 Heading<a class="headerlink" href="#h3-heading" title="Permanent link">&para;</a></h3>
@@ -1364,6 +1360,10 @@ Horizontal Rules
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>

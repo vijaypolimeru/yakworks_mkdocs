@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../images/logo_white.png" width="36" height="36">
-            
+            <img src="../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -169,9 +167,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -925,13 +921,13 @@ pre-installed and ready-to-use with the latest version published on PyPI,
 packaged in a very small image (23MB compressed).</p>
 </div>
 <h3 id="installing-mkdocs">Installing MkDocs<a class="headerlink" href="#installing-mkdocs" title="Permanent link">&para;</a></h3>
-<p>Before installing [MkDocs][2], you need to make sure you have Python and <code>pip</code>
+<p>Before installing [MkDocs][2], you need to make sure you have Python and <code class="codehilite">pip</code>
 – the Python package manager – up and running. You can verify if you're already
 good to go with the following commands:</p>
 <blockquote>
-<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> <strong>Installation on macOS</strong>
+<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> <strong>Installation on macOS</strong>
 Make sure <a href="https://brew.sh/">Brew</a> is installed<br />
-<code>brew install pip</code><br />
+<code class="codehilite">brew install pip</code><br />
 this is the recommended approach as opposed to trying
 to use the built in python</p>
 </blockquote>
@@ -943,39 +939,39 @@ pip --version
 
 <p>Installing and verifying MkDocs is as simple as:</p>
 <div class="codehilite"><pre><span></span>pip install mkdocs <span class="o">&amp;&amp;</span> mkdocs --version
-<span class="c1"># mkdocs, version 0.16.0</span>
+<span class="c1"># mkdocs, version 0.16.3</span>
 </pre></div>
 
 <h3 id="installing-material-components">Installing Material Components<a class="headerlink" href="#installing-material-components" title="Permanent link">&para;</a></h3>
 <h4 id="using-pip">using pip<a class="headerlink" href="#using-pip" title="Permanent link">&para;</a></h4>
-<p>Material can be installed with <code>pip</code>:</p>
+<p>Material can be installed with <code class="codehilite">pip</code>:</p>
 <div class="codehilite"><pre><span></span>pip install mkdocs-material-components
 </pre></div>
 
 <h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Installation on macOS</p>
-<p>When you're running the pre-installed version of Python on macOS, <code>pip</code>
+<p>When you're running the pre-installed version of Python on macOS, <code class="codehilite">pip</code>
 tries to install packages in a folder for which your user might not have
 the adequate permissions. There are two possible solutions for this:</p>
 <ol>
 <li>
-<p><strong>Installing in user space</strong> (recommended): Provide the <code>--user</code> flag
-  to the install command and <code>pip</code> will install the package in a user-site
+<p><strong>Installing in user space</strong> (recommended): Provide the <code class="codehilite">--user</code> flag
+  to the install command and <code class="codehilite">pip</code> will install the package in a user-site
   location. This is the recommended way.</p>
 </li>
 <li>
 <p><strong>Switching to a homebrewed Python</strong>: Upgrade your Python installation
   to a self-contained solution by installing Python with Homebrew. This
-  should eliminate a lot of problems you may be having with <code>pip</code>.</p>
+  should eliminate a lot of problems you may be having with <code class="codehilite">pip</code>.</p>
 </li>
 </ol>
 </div>
 <div class="admonition failure">
 <p class="admonition-title">Error: unrecognized theme 'material'</p>
 <p>If you run into this error, the most common reason is that you installed
-MkDocs through some package manager (e.g. Homebrew or <code>apt-get</code>) and the
-Material theme through <code>pip</code>, so both packages end up in different
+MkDocs through some package manager (e.g. Homebrew or <code class="codehilite">apt-get</code>) and the
+Material theme through <code class="codehilite">pip</code>, so both packages end up in different
 locations. MkDocs only checks it's install location for themes.</p>
 </div>
 <div class="admonition failure">
@@ -987,7 +983,10 @@ locations. MkDocs only checks it's install location for themes.</p>
 </div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>In order to enable the theme just add one of the following lines to your
-project's <code>mkdocs.yml</code>. If you installed Material using pip:</p>
+project's <code class="codehilite">mkdocs.yml</code>. If you installed Material using pip:</p>
+<blockquote>
+<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> <strong>Here is the full yml config used for these docs <a href="https://github.com/yakworks/mkdocs-material-components/blob/material-components-web/mkdocs.yml">mkdocs.yml</a> <img align="absmiddle" alt="👀" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f440.png" title=":eyes:" width="20px" /></strong> provides a good starting point to get all the good extensions used here</p>
+</blockquote>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="s">&#39;material-components&#39;</span>
 </pre></div>
 
@@ -1005,7 +1004,7 @@ theme should be visible. From here on, you can start writing your documentation,
 or read on and customize the theme through some options.</p>
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
 <p>The Material theme adds some extra variables for configuration via your
-project's <code>mkdocs.yml</code>. See the following sections for all available options.</p>
+project's <code class="codehilite">mkdocs.yml</code>. See the following sections for all available options.</p>
 <h3 id="changing-the-color-palette">Changing the color palette<a class="headerlink" href="#changing-the-color-palette" title="Permanent link">&para;</a></h3>
 <p>A default hue is defined for every primary and accent color on Google's
 Material Design <a href="http://www.materialui.co/colors">color palette</a>, which makes it very easy to change the
@@ -1018,9 +1017,9 @@ following variables:</p>
 </pre></div>
 
 <p>Color names are case-insensitive, but must match the names of the Material
-Design color palette. Valid values are: <code>red</code>, <code>pink</code>, <code>purple</code>, <code>deep purple</code>,
-<code>indigo</code>, <code>blue</code>, <code>light blue</code>, <code>cyan</code>, <code>teal</code>, <code>green</code>, <code>light green</code>, <code>lime</code>,
-<code>yellow</code>, <code>amber</code>, <code>orange</code>, <code>deep orange</code>, <code>brown</code>, <code>grey</code> and <code>blue grey</code>.
+Design color palette. Valid values are: <code class="codehilite">red</code>, <code class="codehilite">pink</code>, <code class="codehilite">purple</code>, <code class="codehilite">deep purple</code>,
+<code class="codehilite">indigo</code>, <code class="codehilite">blue</code>, <code class="codehilite">light blue</code>, <code class="codehilite">cyan</code>, <code class="codehilite">teal</code>, <code class="codehilite">green</code>, <code class="codehilite">light green</code>, <code class="codehilite">lime</code>,
+<code class="codehilite">yellow</code>, <code class="codehilite">amber</code>, <code class="codehilite">orange</code>, <code class="codehilite">deep orange</code>, <code class="codehilite">brown</code>, <code class="codehilite">grey</code> and <code class="codehilite">blue grey</code>.
 The last three colors can only be used as a primary color.</p>
 <p>If the color is set via this configuration, an additional CSS file that
 defines the color palette is automatically included. If you want to keep things
@@ -1085,7 +1084,7 @@ See the guide on <a href="../customization/">customization</a> for more informat
 
 <h3 id="changing-the-font-family">Changing the font family<a class="headerlink" href="#changing-the-font-family" title="Permanent link">&para;</a></h3>
 <p>By default the <a href="https://fonts.google.com/specimen/Roboto">Roboto font family</a> is included with the theme, specifically
-the regular sans-serif type for text and the <code>monospaced</code> type for code. Both
+the regular sans-serif type for text and the <code class="codehilite">monospaced</code> type for code. Both
 fonts are loaded from <a href="https://fonts.google.com">Google Fonts</a> and can be changed to other fonts,
 like for example the <a href="https://fonts.google.com/specimen/Ubuntu">Ubuntu font family</a>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
@@ -1094,39 +1093,39 @@ like for example the <a href="https://fonts.google.com/specimen/Ubuntu">Ubuntu f
     <span class="l l-Scalar l-Scalar-Plain">code</span><span class="p p-Indicator">:</span> <span class="s">&#39;Ubuntu</span><span class="nv"> </span><span class="s">Mono&#39;</span>
 </pre></div>
 
-<p>The text font will be loaded in weights 400 and <strong>700</strong>, the <code>monospaced</code> font
+<p>The text font will be loaded in weights 400 and <strong>700</strong>, the <code class="codehilite">monospaced</code> font
 in regular weight. If you want to load fonts from other destinations or don't
-want to use the Google Fonts loading magic, just set <code>font</code> to <code>false</code>:</p>
+want to use the Google Fonts loading magic, just set <code class="codehilite">font</code> to <code class="codehilite">false</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">font</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
 </pre></div>
 
 <h3 id="adding-a-source-repository">Adding a source repository<a class="headerlink" href="#adding-a-source-repository" title="Permanent link">&para;</a></h3>
 <p>To include a link to the repository of your project within your documentation,
-set the following variables via your project's <code>mkdocs.yml</code>:</p>
+set the following variables via your project's <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">repo_name</span><span class="p p-Indicator">:</span> <span class="s">&#39;my-github-handle/my-project&#39;</span>
 <span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://github.com/my-github-handle/my-project&#39;</span>
 </pre></div>
 
 <p>The name of the repository will be rendered next to the search bar on big
 screens and as part of the main navigation drawer on smaller screen sizes.
-Furthermore, if <code>repo_url</code> points to a GitHub, BitBucket or GitLab repository,
+Furthermore, if <code class="codehilite">repo_url</code> points to a GitHub, BitBucket or GitLab repository,
 the respective service logo will be shown next to the name of the repository.
 Additionally, for GitHub, the number of stars and forks is shown.</p>
 <p>If the repository is hosted in a private environment, the service logo can be
-set explicitly by setting <code>extra.repo_icon</code> to <code>github</code>, <code>gitlab</code> or
-<code>bitbucket</code>.</p>
+set explicitly by setting <code class="codehilite">extra.repo_icon</code> to <code class="codehilite">github</code>, <code class="codehilite">gitlab</code> or
+<code class="codehilite">bitbucket</code>.</p>
 <div class="admonition question">
 <p class="admonition-title">Why is there an edit button at the top of every article?</p>
-<p>If the <code>repo_url</code> is set to a GitHub or BitBucket repository, and the
-<code>repo_name</code> is set to <em>GitHub</em> or <em>BitBucket</em> (implied by default), an
+<p>If the <code class="codehilite">repo_url</code> is set to a GitHub or BitBucket repository, and the
+<code class="codehilite">repo_name</code> is set to <em>GitHub</em> or <em>BitBucket</em> (implied by default), an
 edit button will appear at the top of every article. This is the automatic
 behavior that MkDocs implements. See the <a href="http://www.mkdocs.org/user-guide/configuration/#edit_uri">MkDocs documentation</a> on more
-guidance regarding the <code>edit_uri</code> attribute, which defines whether the edit
+guidance regarding the <code class="codehilite">edit_uri</code> attribute, which defines whether the edit
 button is shown or not.</p>
 </div>
 <h3 id="adding-a-favicon">Adding a favicon<a class="headerlink" href="#adding-a-favicon" title="Permanent link">&para;</a></h3>
-<p>A favicon can be added by setting the <code>site_favicon</code> variable to an <code>.ico</code> or
+<p>A favicon can be added by setting the <code class="codehilite">site_favicon</code> variable to an <code class="codehilite"><span class="na">.ico</span></code> or
 image file:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">site_favicon</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/favicon.ico&#39;</span>
 </pre></div>
@@ -1135,7 +1134,7 @@ image file:</p>
 <p>Your logo should have rectangular shape with a minimum resolution of 128x128,
 leave some room towards the edges and be composed of high contrast areas on a
 transparent ground, as it will be placed on the colored header bar and drawer.
-Simply create the folder <code>docs/images</code>, add your logo and embed it with:</p>
+Simply create the folder <code class="codehilite">docs/images</code>, add your logo and embed it with:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/logo.svg&#39;</span>
 </pre></div>
@@ -1149,9 +1148,9 @@ Simply create the folder <code>docs/images</code>, add your logo and embed it wi
 
 <h3 id="adding-social-links">Adding social links<a class="headerlink" href="#adding-social-links" title="Permanent link">&para;</a></h3>
 <p>Social accounts can be linked in the footer of the documentation using the
-automatically included <a href="http://fontawesome.io/icons/">FontAwesome</a> webfont. The <code>type</code> must denote the
-name of the social service, e.g. <code>github</code>, <code>twitter</code> or <code>linkedin</code> and the
-<code>link</code> must contain the URL you want to link to:</p>
+automatically included <a href="http://fontawesome.io/icons/">FontAwesome</a> webfont. The <code class="codehilite">type</code> must denote the
+name of the social service, e.g. <code class="codehilite">github</code>, <code class="codehilite">twitter</code> or <code class="codehilite">linkedin</code> and the
+<code class="codehilite">link</code> must contain the URL you want to link to:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">social</span><span class="p p-Indicator">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;github&#39;</span>
@@ -1162,14 +1161,14 @@ name of the social service, e.g. <code>github</code>, <code>twitter</code> or <c
       <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://linkedin.com/in/squidfunk&#39;</span>
 </pre></div>
 
-<p>The links are generated in order and the <code>type</code> of the links must match the
-name of the FontAwesome glyph. The <code>fa</code> is automatically added, so <code>github</code>
-will result in <code>fa fa-github</code>.</p>
+<p>The links are generated in order and the <code class="codehilite">type</code> of the links must match the
+name of the FontAwesome glyph. The <code class="codehilite">fa</code> is automatically added, so <code class="codehilite">github</code>
+will result in <code class="codehilite">fa fa-github</code>.</p>
 <h3 id="google-analytics-integration">Google Analytics integration<a class="headerlink" href="#google-analytics-integration" title="Permanent link">&para;</a></h3>
 <p>MkDocs makes it easy to integrate site tracking with Google Analytics.
 Besides basic tracking, clicks on all outgoing links can be tracked as well as
 how site search is used. Tracking can be activated in your project's
-<code>mkdocs.yml</code>:</p>
+<code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;UA-XXXXXXXX-X&#39;</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;auto&#39;</span>
@@ -1178,7 +1177,7 @@ how site search is used. Tracking can be activated in your project's
 <h3 id="disqus-integation">Disqus integation<a class="headerlink" href="#disqus-integation" title="Permanent link">&para;</a></h3>
 <p>Material for MkDocs is integrated with <a href="https://disqus.com">Disqus</a>, so if you want to add a
 comments section to your documentation set the shortname of your Disqus project
-in your <code>mkdocs.yml</code>:</p>
+in your <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">disqus</span><span class="p p-Indicator">:</span> <span class="s">&#39;your-disqus-shortname&#39;</span>
 </pre></div>
@@ -1189,15 +1188,15 @@ that is linking to the comments section. The necessary JavaScript is
 automatically included.</p>
 <div class="admonition warning">
 <p class="admonition-title">Requirements</p>
-<p><code>site_url</code> value must be set in <code>mkdocs.yml</code> for the Disqus integration to
+<p><code class="codehilite">site_url</code> value must be set in <code class="codehilite">mkdocs.yml</code> for the Disqus integration to
 load properly.</p>
 </div>
 <h3 id="localization">Localization<a class="headerlink" href="#localization" title="Permanent link">&para;</a></h3>
 <h4 id="translations">Translations<a class="headerlink" href="#translations" title="Permanent link">&para;</a></h4>
 <p>Material for MkDocs supports internationalization (i18n). In order to translate
 the labels (e.g. <em>Previous</em> and <em>Next</em> in the footer), you can override the
-file <code>partials/language.html</code> and provide your own translations inside the
-macro <code>t</code>:</p>
+file <code class="codehilite">partials/language.html</code> and provide your own translations inside the
+macro <code class="codehilite">t</code>:</p>
 <div class="codehilite"><pre><span></span><span class="cp">{%</span> <span class="k">macro</span> <span class="nv">t</span><span class="o">(</span><span class="nv">key</span><span class="o">)</span> <span class="cp">%}{{</span> <span class="o">{</span>
   <span class="s2">&quot;language&quot;</span><span class="o">:</span> <span class="s2">&quot;en&quot;</span><span class="o">,</span>
   <span class="s2">&quot;edit.link.title&quot;</span><span class="o">:</span> <span class="s2">&quot;Edit this page&quot;</span><span class="o">,</span>
@@ -1226,7 +1225,7 @@ section on <a href="../customization/#overriding-partials">overriding partials</
 English language by default, while stemmers for other languages are included
 with <a href="https://github.com/MihaiValentin/lunr-languages">lunr-languages</a>, both of which are integrated with this theme. Support
 for other languages and even multilingual search can be activated by setting
-the key <code>search.languages</code> to a comma-separated list of supported 2-letter
+the key <code class="codehilite">search.languages</code> to a comma-separated list of supported 2-letter
 language codes, e.g.:</p>
 <div class="codehilite"><pre><span></span><span class="cp">{%</span> <span class="k">macro</span> <span class="nv">t</span><span class="o">(</span><span class="nv">key</span><span class="o">)</span> <span class="cp">%}{{</span> <span class="o">{</span>
   <span class="err">...</span>
@@ -1237,10 +1236,10 @@ language codes, e.g.:</p>
 
 <p>This will automatically load the stemmers for the specified languages and
 set them up with site search, nothing else to be done.</p>
-<p>At the time of writing, the following languages are supported: English <code>en</code>,
-French <code>fr</code>, Spanish <code>es</code>, Italian <code>it</code>, Japanese <code>jp</code>, Dutch <code>du</code>, Danish <code>da</code>,
-Portguese <code>pt</code>, Finnish <code>fi</code>, Romanian <code>ro</code>, Hungarian <code>hu</code>, Russian <code>ru</code>,
-Norwegian <code>no</code>, Swedish <code>sv</code> and Turkish <code>tr</code>.</p>
+<p>At the time of writing, the following languages are supported: English <code class="codehilite">en</code>,
+French <code class="codehilite">fr</code>, Spanish <code class="codehilite">es</code>, Italian <code class="codehilite">it</code>, Japanese <code class="codehilite">jp</code>, Dutch <code class="codehilite">du</code>, Danish <code class="codehilite">da</code>,
+Portguese <code class="codehilite">pt</code>, Finnish <code class="codehilite">fi</code>, Romanian <code class="codehilite">ro</code>, Hungarian <code class="codehilite">hu</code>, Russian <code class="codehilite">ru</code>,
+Norwegian <code class="codehilite">no</code>, Swedish <code class="codehilite">sv</code> and Turkish <code class="codehilite">tr</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Only specify the languages you really need</p>
 <p>Be aware that including suppport for other languages increases the general
@@ -1248,7 +1247,7 @@ JavaScript payload by around 20kb (without gzip) and by another 15-30kb per
 language.</p>
 </div>
 <p>The separator for tokenization can also be customized, which makes it possible
-to index parts of words that are separated by <code>-</code> or <code>.</code> for example:</p>
+to index parts of words that are separated by <code class="codehilite">-</code> or <code class="codehilite">.</code> for example:</p>
 <div class="codehilite"><pre><span></span><span class="cp">{%</span> <span class="k">macro</span> <span class="nv">t</span><span class="o">(</span><span class="nv">key</span><span class="o">)</span> <span class="cp">%}{{</span> <span class="o">{</span>
   <span class="err">...</span>
   <span class="s2">&quot;search.tokenizer&quot;</span><span class="o">:</span> <span class="s2">&quot;[\s\-\.]+&quot;</span><span class="o">,</span>
@@ -1290,7 +1289,7 @@ Material theme including more information regarding installation and usage:</p>
 <li><a href="../extensions/pymdown/">PyMdown Extensions</a></li>
 </ul>
 <h2 id="full-example">Full example<a class="headerlink" href="#full-example" title="Permanent link">&para;</a></h2>
-<p>Below is a full example configuration for a <code>mkdocs.yml</code>:</p>
+<p>Below is a full example configuration for a <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="c1"># Project information</span>
 <span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="s">&#39;My</span><span class="nv"> </span><span class="s">Project&#39;</span>
 <span class="l l-Scalar l-Scalar-Plain">site_description</span><span class="p p-Indicator">:</span> <span class="s">&#39;A</span><span class="nv"> </span><span class="s">short</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">my</span><span class="nv"> </span><span class="s">project&#39;</span>
@@ -1388,6 +1387,10 @@ Material theme including more information regarding installation and usage:</p>
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>

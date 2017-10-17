@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../../images/logo_white.png" width="36" height="36">
-            
+            <img src="../../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -173,9 +171,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -1021,14 +1017,14 @@ further directions on how to set up Pygments or use the official
 <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">Docker image</a> with all dependencies pre-installed.</p>
 </div>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>CodeHilite parses code blocks and wraps them in <code>pre</code> tags. If <a href="http://pygments.org">Pygments</a>
+<p>CodeHilite parses code blocks and wraps them in <code class="codehilite">pre</code> tags. If <a href="http://pygments.org">Pygments</a>
 is installed, which is a generic syntax highlighter with support for over
 <a href="http://pygments.org/languages">300 languages</a>, CodeHilite will also highlight the code block. Pygments can
 be installed with the following command:</p>
 <div class="codehilite"><pre><span></span>pip install pygments
 </pre></div>
 
-<p>To enable CodeHilite, add the following lines to your <code>mkdocs.yml</code>:</p>
+<p>To enable CodeHilite, add the following lines to your <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
 </pre></div>
@@ -1036,10 +1032,10 @@ be installed with the following command:</p>
 <div class="admonition warning">
 <p class="admonition-title">Migrating from Material 0.2.x</p>
 <p>In 0.2.x the CodeHilite extension was included with
-<code>codehilite(css_class=code)</code> which switched the CSS class from
-<code>.codehilite</code> to <code>.code</code>. The current version of the theme doesn't require
-that and defines styles for the default <code>.codehilite</code> class, so the part
-<code>css_class=code</code> needs to be removed.</p>
+<code class="codehilite">codehilite(css_class=code)</code> which switched the CSS class from
+<code class="codehilite"><span class="na">.codehilite</span></code> to <code class="codehilite"><span class="na">.code</span></code>. The current version of the theme doesn't require
+that and defines styles for the default <code class="codehilite"><span class="na">.codehilite</span></code> class, so the part
+<code class="codehilite">css_class=code</code> needs to be removed.</p>
 </div>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="specifying-the-language">Specifying the language<a class="headerlink" href="#specifying-the-language" title="Permanent link">&para;</a></h3>
@@ -1051,9 +1047,9 @@ different ways.</p>
 separate lines. To add code highlighting to those blocks, the easiest way is
 to specify the language directly after the opening block.</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span>``` python
-import tensorflow as tf
-```
+<div class="codehilite"><pre><span></span><span class="sb">``</span><span class="err">`</span> <span class="n">python</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="sb">``</span><span class="err">`</span>
 </pre></div>
 
 <p>Result:</p>
@@ -1066,8 +1062,8 @@ language is derived from the path referenced in the shebang. This will only
 work for code blocks that are indented using four spaces, not for those
 encapsulated in three backticks.</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span>    #!/usr/bin/python
-    import tensorflow as tf
+<div class="codehilite"><pre><span></span>    <span class="c1">#!/usr/bin/python</span>
+    <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
 </pre></div>
 
 <p>Result:</p>
@@ -1080,8 +1076,8 @@ encapsulated in three backticks.</p>
 the first line is stripped. This will only work for code blocks that are
 indented using four spaces, not for those encapsulated in three backticks.</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span>    :::python
-    import tensorflow as tf
+<div class="codehilite"><pre><span></span>    <span class="p">:::</span><span class="n">python</span>
+    <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
 </pre></div>
 
 <p>Result:</p>
@@ -1090,7 +1086,7 @@ indented using four spaces, not for those encapsulated in three backticks.</p>
 
 
 <h3 id="adding-line-numbers">Adding line numbers<a class="headerlink" href="#adding-line-numbers" title="Permanent link">&para;</a></h3>
-<p>Line numbers can be added by enabling the <code>linenums</code> flag in your <code>mkdocs.yml</code>:</p>
+<p>Line numbers can be added by enabling the <code class="codehilite">linenums</code> flag in your <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite(linenums=true)</span>
 </pre></div>
@@ -1122,7 +1118,7 @@ def bubble_sort(items):
 </td></tr></table>
 
 <h3 id="highlighting-specific-lines">Highlighting specific lines<a class="headerlink" href="#highlighting-specific-lines" title="Permanent link">&para;</a></h3>
-<p>Specific lines can be highlighted by passing the line numbers to the <code>hl_lines</code>
+<p>Specific lines can be highlighted by passing the line numbers to the <code class="codehilite">hl_lines</code>
 argument placed right after the language identifier. Line counts start at 1.</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span>``` python hl_lines=&quot;3 4&quot;
@@ -1844,6 +1840,10 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>

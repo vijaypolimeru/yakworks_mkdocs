@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../images/logo_white.png" width="36" height="36">
-            
+            <img src="../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -169,9 +167,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -733,32 +729,32 @@ necessary to preserve the desired style.</p>
 <h2 id="adding-assets">Adding assets<a class="headerlink" href="#adding-assets" title="Permanent link">&para;</a></h2>
 <p><a href="http://www.mkdocs.org">MkDocs</a> provides several ways to interfere with themes. In order to make a
 few tweaks to an existing theme, you can just add your stylesheets and
-JavaScript files to the <code>docs</code> directory.</p>
+JavaScript files to the <code class="codehilite">docs</code> directory.</p>
 <h3 id="additional-stylesheets">Additional stylesheets<a class="headerlink" href="#additional-stylesheets" title="Permanent link">&para;</a></h3>
 <p>If you want to tweak some colors or change the spacing of certain elements,
 you can do this in a separate stylesheet. The easiest way is by creating a
-new stylesheet file in your <code>docs</code> directory:</p>
+new stylesheet file in your <code class="codehilite">docs</code> directory:</p>
 <div class="codehilite"><pre><span></span>mkdir docs/stylesheets
 touch docs/stylesheets/extra.css
 </pre></div>
 
-<p>Then, add the following line to your <code>mkdocs.yml</code>:</p>
+<p>Then, add the following line to your <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_css</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;stylesheets/extra.css&#39;</span>
 </pre></div>
 
-<p>Spin up the development server with <code>mkdocs serve</code> and start typing your
+<p>Spin up the development server with <code class="codehilite">mkdocs serve</code> and start typing your
 changes in your additional stylesheet file – you can see them instantly after
 saving, as the MkDocs development server implements live reloading.</p>
 <h3 id="additional-javascript">Additional JavaScript<a class="headerlink" href="#additional-javascript" title="Permanent link">&para;</a></h3>
 <p>The same is true for additional JavaScript. If you want to integrate another
 syntax highlighter or add some custom logic to your theme, create a new
-JavaScript file in your <code>docs</code> directory:</p>
+JavaScript file in your <code class="codehilite">docs</code> directory:</p>
 <div class="codehilite"><pre><span></span>mkdir docs/javascripts
 touch docs/javascripts/extra.js
 </pre></div>
 
-<p>Then, add the following line to your <code>mkdocs.yml</code>:</p>
+<p>Then, add the following line to your <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_javascript</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;javascripts/extra.js&#39;</span>
 </pre></div>
@@ -770,17 +766,17 @@ extend the theme. From version 0.16 on MkDocs implements <a href="http://www.mkd
 an easy way to override parts of a theme without forking and changing the
 main theme.</p>
 <h3 id="setup-and-theme-structure">Setup and theme structure<a class="headerlink" href="#setup-and-theme-structure" title="Permanent link">&para;</a></h3>
-<p>Reference the Material theme as usual in your <code>mkdocs.yml</code>, and create a
-new folder for overrides, e.g. <code>theme</code>, which you reference using <code>theme_dir</code>:</p>
+<p>Reference the Material theme as usual in your <code class="codehilite">mkdocs.yml</code>, and create a
+new folder for overrides, e.g. <code class="codehilite">theme</code>, which you reference using <code class="codehilite">theme_dir</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="s">&#39;material&#39;</span>
 <span class="l l-Scalar l-Scalar-Plain">theme_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;theme&#39;</span>
 </pre></div>
 
 <div class="admonition warning">
 <p class="admonition-title">Theme extension prerequisites</p>
-<p>As the <code>theme_dir</code> variable is used for the theme extension process, the
-Material theme needs to be installed via <code>pip</code> and referenced with the
-<code>theme</code> parameter in your <code>mkdocs.yml</code>.</p>
+<p>As the <code class="codehilite">theme_dir</code> variable is used for the theme extension process, the
+Material theme needs to be installed via <code class="codehilite">pip</code> and referenced with the
+<code class="codehilite">theme</code> parameter in your <code class="codehilite">mkdocs.yml</code>.</p>
 </div>
 <p>The structure in the theme directory must mirror the directory structure of the
 original theme, as any file in the theme directory will replace the file with
@@ -812,14 +808,14 @@ may also be put in the theme directory.</p>
 </pre></div>
 
 <h3 id="overriding-partials">Overriding partials<a class="headerlink" href="#overriding-partials" title="Permanent link">&para;</a></h3>
-<p>In order to override the footer, we can replace the <code>footer.html</code> partial with
-our own partial. To do this, create the file <code>partials/footer.html</code> in the
+<p>In order to override the footer, we can replace the <code class="codehilite">footer.html</code> partial with
+our own partial. To do this, create the file <code class="codehilite">partials/footer.html</code> in the
 theme directory. MkDocs will now use the new partial when rendering the theme.
 This can be done with any file.</p>
 <h3 id="overriding-template-blocks">Overriding template blocks<a class="headerlink" href="#overriding-template-blocks" title="Permanent link">&para;</a></h3>
 <p>Besides overriding partials, one can also override so called template blocks,
 which are defined inside the Material theme and wrap specific features. To
-override a template block, create a <code>main.html</code> inside the theme directory and
+override a template block, create a <code class="codehilite">main.html</code> inside the theme directory and
 define the block, e.g.:</p>
 <div class="codehilite"><pre><span></span><span class="cp">{%</span> <span class="k">extends</span> <span class="s2">&quot;base.html&quot;</span> <span class="cp">%}</span><span class="x"></span>
 
@@ -838,75 +834,75 @@ define the block, e.g.:</p>
 </thead>
 <tbody>
 <tr>
-<td><code>analytics</code></td>
+<td><code class="codehilite">analytics</code></td>
 <td>Wraps the Google Analytics integration</td>
 </tr>
 <tr>
-<td><code>content</code></td>
+<td><code class="codehilite">content</code></td>
 <td>Wraps the main content</td>
 </tr>
 <tr>
-<td><code>disqus</code></td>
+<td><code class="codehilite">disqus</code></td>
 <td>Wraps the disqus integration</td>
 </tr>
 <tr>
-<td><code>extrahead</code></td>
+<td><code class="codehilite">extrahead</code></td>
 <td>Empty block to define additional meta tags</td>
 </tr>
 <tr>
-<td><code>fonts</code></td>
+<td><code class="codehilite">fonts</code></td>
 <td>Wraps the webfont definitions</td>
 </tr>
 <tr>
-<td><code>footer</code></td>
+<td><code class="codehilite">footer</code></td>
 <td>Wraps the footer with navigation and copyright</td>
 </tr>
 <tr>
-<td><code>header</code></td>
+<td><code class="codehilite">header</code></td>
 <td>Wraps the fixed header bar</td>
 </tr>
 <tr>
-<td><code>htmltitle</code></td>
-<td>Wraps the <code>&lt;title&gt;</code> tag</td>
+<td><code class="codehilite">htmltitle</code></td>
+<td>Wraps the <code class="codehilite">&lt;title&gt;</code> tag</td>
 </tr>
 <tr>
-<td><code>libs</code></td>
+<td><code class="codehilite">libs</code></td>
 <td>Wraps the JavaScript libraries, e.g. Modernizr</td>
 </tr>
 <tr>
-<td><code>repo</code></td>
+<td><code class="codehilite">repo</code></td>
 <td>Wraps the repository link in the header bar</td>
 </tr>
 <tr>
-<td><code>scripts</code></td>
+<td><code class="codehilite">scripts</code></td>
 <td>Wraps the JavaScript application logic</td>
 </tr>
 <tr>
-<td><code>source</code></td>
+<td><code class="codehilite">source</code></td>
 <td>Wraps the linked source files</td>
 </tr>
 <tr>
-<td><code>search_box</code></td>
+<td><code class="codehilite">search_box</code></td>
 <td>Wraps the search form in the header bar</td>
 </tr>
 <tr>
-<td><code>site_meta</code></td>
+<td><code class="codehilite">site_meta</code></td>
 <td>Wraps the meta tags in the document head</td>
 </tr>
 <tr>
-<td><code>site_name</code></td>
+<td><code class="codehilite">site_name</code></td>
 <td>Wraps the site name in the header bar</td>
 </tr>
 <tr>
-<td><code>site_nav</code></td>
+<td><code class="codehilite">site_nav</code></td>
 <td>Wraps the site navigation and table of contents</td>
 </tr>
 <tr>
-<td><code>social</code></td>
+<td><code class="codehilite">social</code></td>
 <td>Wraps the social links in the footer</td>
 </tr>
 <tr>
-<td><code>styles</code></td>
+<td><code class="codehilite">styles</code></td>
 <td>Wraps the stylesheets (also extra sources)</td>
 </tr>
 </tbody>
@@ -920,7 +916,7 @@ theme and recompile it. This is fairly easy.</p>
 <h3 id="environment-setup">Environment setup<a class="headerlink" href="#environment-setup" title="Permanent link">&para;</a></h3>
 <p>In order to start development on the Material theme, a <a href="https://nodejs.org">Node.js</a> version of
 at least 5 is required, as well as the package manager <a href="https://yarnpkg.com/">yarn</a> which is a
-better version of <code>npm</code>. First, clone the repository:</p>
+better version of <code class="codehilite">npm</code>. First, clone the repository:</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/squidfunk/mkdocs-material
 </pre></div>
 
@@ -940,16 +936,16 @@ Webpack which can be started with the following command:</p>
 on assets, templates and documentation. Point your browser to
 <a href="http://localhost:8000">localhost:8000</a> and you should see this documentation in front of you.</p>
 <p>For example, changing the color palette is as simple as changing the
-<code>$md-color-primary</code> and <code>$md-color-accent</code> variables in
-<code>src/assets/stylesheets/_config.scss</code>:</p>
+<code class="codehilite">$md-color-primary</code> and <code class="codehilite">$md-color-accent</code> variables in
+<code class="codehilite">src/assets/stylesheets/_config.scss</code>:</p>
 <div class="codehilite"><pre><span></span><span class="o">$</span><span class="nt">md-color-primary</span><span class="o">:</span> <span class="o">$</span><span class="nt">clr-red-400</span><span class="o">;</span>
 <span class="o">$</span><span class="nt">md-color-accent</span><span class="o">:</span>  <span class="o">$</span><span class="nt">clr-teal-a700</span><span class="o">;</span>
 </pre></div>
 
 <div class="admonition warning">
 <p class="admonition-title">Automatically generated files</p>
-<p>Never make any changes in the <code>material</code> directory, as the contents of this
-directory are automatically generated from the <code>src</code> directory and will be
+<p>Never make any changes in the <code class="codehilite">material</code> directory, as the contents of this
+directory are automatically generated from the <code class="codehilite">src</code> directory and will be
 overriden when the theme is built.</p>
 </div>
 <h3 id="build-process">Build process<a class="headerlink" href="#build-process" title="Permanent link">&para;</a></h3>
@@ -959,9 +955,9 @@ overriden when the theme is built.</p>
 
 <p>This triggers the production-level compilation and minification of all
 stylesheets and JavaScript sources. When the command exits, the final theme is
-located in the <code>material</code> directory. Add the <code>theme_dir</code> variable pointing to
-the aforementioned directory in your original <code>mkdocs.yml</code>.</p>
-<p>Now you can run <code>mkdocs build</code> and you should see your documentation with your
+located in the <code class="codehilite">material</code> directory. Add the <code class="codehilite">theme_dir</code> variable pointing to
+the aforementioned directory in your original <code class="codehilite">mkdocs.yml</code>.</p>
+<p>Now you can run <code class="codehilite">mkdocs build</code> and you should see your documentation with your
 changes to the original Material theme.</p>
                 
                   
@@ -1002,6 +998,10 @@ changes to the original Material theme.</p>
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>

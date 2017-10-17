@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../../images/logo_white.png" width="36" height="36">
-            
+            <img src="../../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -173,9 +171,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -554,9 +550,9 @@
 <ol>
 <li>after recording your cast share via screen cast as you normally would do.</li>
 <li>It puts the link on your clipboard. Go to a browser window and open that link</li>
-<li>click <code>share</code> in the upper toolbar and copy the embed code. its helpful to also copy the <code>share url</code></li>
+<li>click <code class="codehilite">share</code> in the upper toolbar and copy the embed code. its helpful to also copy the <code class="codehilite">share url</code></li>
 <li>paste it into your md doc and adjust the width and height appropriately.</li>
-<li>its helpful to also copy the <code>share url</code> from your clipboard stack below it.</li>
+<li>its helpful to also copy the <code class="codehilite">share url</code> from your clipboard stack below it.</li>
 </ol>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">object</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;scPlayer&quot;</span>  <span class="na">width</span><span class="o">=</span><span class="s">&quot;100%&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;600&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;application/x-shockwave-flash&quot;</span> <span class="na">data</span><span class="o">=</span><span class="s">&quot;https://content.screencast.com/users/Greenbill/folders/Public/media/d542c236-c23e-42d1-b097-afc728edc2bf/jingswfplayer.swf&quot;</span> <span class="p">&gt;</span>
  <span class="p">&lt;</span><span class="nt">param</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;movie&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;https://content.screencast.com/users/Greenbill/folders/Public/media/d542c236-c23e-42d1-b097-afc728edc2bf/jingswfplayer.swf&quot;</span> <span class="p">/&gt;</span>
@@ -601,9 +597,9 @@ Instructions are the same but code to copy and paste in is much shorter.</p>
 
 <p>Snaggit is also much more flexible since it uses mp4 which is an html5 standard.
 This is the same video and is check into this doc's github (its a small example).</p>
-<div class="codehilite"><pre><span></span>&lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
-&lt;source src=&quot;../../images/example-snaggit.mp4?dl=0&quot; type=&quot;video/mp4&quot;&gt;
-&lt;/video&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span> <span class="err">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">&quot;../../images/example-snaggit.mp4?dl=0&quot;</span> <span class="na">type=</span><span class="s">&quot;video/mp4&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
 </pre></div>
 
 <video width="320" height="240" controls>
@@ -612,11 +608,11 @@ This is the same video and is check into this doc's github (its a small example)
 
 <p>if you save it to dropbox or onedrive you would reference it like this.</p>
 <blockquote>
-<p><img alt="💡" class="gemoji" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" /> note how the <code>www.dropbox</code> part in the url is replaced with <code>dl.dropboxusercontent</code></p>
+<p><img align="absmiddle" alt="💡" class="gemoji" height="20px" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4a1.png" title=":bulb:" width="20px" /> note how the <code class="codehilite">www.dropbox</code> part in the url is replaced with <code class="codehilite">dl.dropboxusercontent</code></p>
 </blockquote>
-<div class="codehilite"><pre><span></span>&lt;video width=&quot;320&quot; height=&quot;240&quot; controls&gt;
-&lt;source src=&quot;https://dl.dropboxusercontent.com/s/up7k0vasnd3r1pn/2017-07-16_12-07-55.mp4?dl=0&quot; type=&quot;video/mp4&quot;&gt;
-&lt;/video&gt;
+<div class="codehilite"><pre><span></span><span class="nt">&lt;video</span> <span class="na">width=</span><span class="s">&quot;320&quot;</span> <span class="na">height=</span><span class="s">&quot;240&quot;</span> <span class="err">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">&quot;https://dl.dropboxusercontent.com/s/up7k0vasnd3r1pn/2017-07-16_12-07-55.mp4?dl=0&quot;</span> <span class="na">type=</span><span class="s">&quot;video/mp4&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
 </pre></div>
                 
                   
@@ -671,6 +667,10 @@ This is the same video and is check into this doc's github (its a small example)
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>

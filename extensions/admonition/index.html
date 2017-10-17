@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../../images/logo_white.png" width="36" height="36">
-            
+            <img src="../../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -173,9 +171,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -807,13 +803,13 @@
 makes it possible to add block-styled side content to your documentation, for
 example summaries, notes, hints or warnings.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>Add the following lines to your <code>mkdocs.yml</code>:</p>
+<p>Add the following lines to your <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
 </pre></div>
 
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Admonition blocks follow a simple syntax: every block is started with <code>!!!</code>,
+<p>Admonition blocks follow a simple syntax: every block is started with <code class="codehilite">!!!</code>,
 followed by a single keyword which is used as the <a href="#types">type qualifier</a> of the
 block. The content of the block then follows on the next line, indented by
 four spaces.</p>
@@ -910,13 +906,13 @@ useful for FAQs or content that is of secondary nature.</p>
 <p>Result:</p>
 <details class="note"><summary>Phasellus posuere in sem ut cursus</summary><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
 nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-massa, nec semper lorem quam in massa.</p></details><p>By adding a <code>+</code> sign directly after the start marker, blocks can be rendered
+massa, nec semper lorem quam in massa.</p></details><p>By adding a <code class="codehilite">+</code> sign directly after the start marker, blocks can be rendered
 open by default.</p>
 <h2 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h2>
 <p>Admonition supports user-defined type qualifiers which may influence the style
 of the inserted block. Following is a list of type qualifiers provided by the
 Material theme, whereas the default type, and thus fallback for unknown type
-qualifiers, is <code>note</code>.</p>
+qualifiers, is <code class="codehilite">note</code>.</p>
 <h3 id="note">Note<a class="headerlink" href="#note" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span>!!! note
@@ -934,8 +930,8 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>note</code></li>
-<li><code>seealso</code></li>
+<li><code class="codehilite">note</code></li>
+<li><code class="codehilite">seealso</code></li>
 </ul>
 <h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -954,8 +950,8 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>summary</code></li>
-<li><code>tldr</code></li>
+<li><code class="codehilite">summary</code></li>
+<li><code class="codehilite">tldr</code></li>
 </ul>
 <h3 id="info">Info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -974,8 +970,8 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>info</code></li>
-<li><code>todo</code></li>
+<li><code class="codehilite">info</code></li>
+<li><code class="codehilite">todo</code></li>
 </ul>
 <h3 id="tip">Tip<a class="headerlink" href="#tip" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -994,9 +990,9 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>tip</code></li>
-<li><code>hint</code></li>
-<li><code>important</code></li>
+<li><code class="codehilite">tip</code></li>
+<li><code class="codehilite">hint</code></li>
+<li><code class="codehilite">important</code></li>
 </ul>
 <h3 id="success">Success<a class="headerlink" href="#success" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -1015,9 +1011,9 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>success</code></li>
-<li><code>check</code></li>
-<li><code>done</code></li>
+<li><code class="codehilite">success</code></li>
+<li><code class="codehilite">check</code></li>
+<li><code class="codehilite">done</code></li>
 </ul>
 <h3 id="question">Question<a class="headerlink" href="#question" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -1036,9 +1032,9 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>question</code></li>
-<li><code>help</code></li>
-<li><code>faq</code></li>
+<li><code class="codehilite">question</code></li>
+<li><code class="codehilite">help</code></li>
+<li><code class="codehilite">faq</code></li>
 </ul>
 <h3 id="warning">Warning<a class="headerlink" href="#warning" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -1057,9 +1053,9 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>warning</code></li>
-<li><code>caution</code></li>
-<li><code>attention</code></li>
+<li><code class="codehilite">warning</code></li>
+<li><code class="codehilite">caution</code></li>
+<li><code class="codehilite">attention</code></li>
 </ul>
 <h3 id="failure">Failure<a class="headerlink" href="#failure" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -1078,9 +1074,9 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>failure</code></li>
-<li><code>fail</code></li>
-<li><code>missing</code></li>
+<li><code class="codehilite">failure</code></li>
+<li><code class="codehilite">fail</code></li>
+<li><code class="codehilite">missing</code></li>
 </ul>
 <h3 id="danger">Danger<a class="headerlink" href="#danger" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -1099,8 +1095,8 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>danger</code></li>
-<li><code>error</code></li>
+<li><code class="codehilite">danger</code></li>
+<li><code class="codehilite">error</code></li>
 </ul>
 <h3 id="bug">Bug<a class="headerlink" href="#bug" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -1119,7 +1115,7 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>bug</code></li>
+<li><code class="codehilite">bug</code></li>
 </ul>
 <h3 id="quote">Quote<a class="headerlink" href="#quote" title="Permanent link">&para;</a></h3>
 <p>Example:</p>
@@ -1138,8 +1134,8 @@ massa, nec semper lorem quam in massa.</p>
 </div>
 <p>Qualifiers:</p>
 <ul>
-<li><code>quote</code></li>
-<li><code>cite</code></li>
+<li><code class="codehilite">quote</code></li>
+<li><code class="codehilite">cite</code></li>
 </ul>
                 
                   
@@ -1194,6 +1190,10 @@ massa, nec semper lorem quam in massa.</p>
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>

@@ -19,7 +19,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-components-1.10.5">
     
     
       
@@ -30,7 +30,7 @@
       <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-3fa239afa0.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-2cd7d9ab0f.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-035c261bc5.palette.css">
       
@@ -78,9 +78,7 @@
       <div class="md-flex__cell md-flex__cell--shrink md-flex__cell--vmiddle">
         <a href="http://yakworks.github.io/mkdocs-material-components/" title="MkDocs Material Components" class="md-header-nav__button md-logo">
           
-            
-              <img src="../../images/logo_white.png" width="36" height="36">
-            
+            <img src="../../assets/images/logo_white.png" width="36" height="36">
           
         </a>
       </div>
@@ -173,9 +171,7 @@
   <label class="md-nav__title md-nav__title--site" for="drawer">
     <div class="md-nav__button md-logo">
       
-        
-          <img src="../../images/logo_white.png">
-        
+        <i class="md-icon md-icon--home"></i>
       
     </div>
     MkDocs Material Components
@@ -624,7 +620,7 @@
 <p>The <a href="https://pythonhosted.org/Markdown/extensions/meta_data.html">Metadata</a> extension makes it possible to add metadata to a document
 which gives more control over the theme in a page-specific context.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>Add the following lines to your <code>mkdocs.yml</code>:</p>
+<p>Add the following lines to your <code class="codehilite">mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">meta</span>
 </pre></div>
@@ -635,23 +631,23 @@ Markdown document, delimited by a blank line which ends the metadata context.
 Naturally, the metadata is stripped from the document before rendering the
 actual page content and made available to the theme.</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span>title: Lorem ipsum dolor sit amet
-description: Nullam urna elit, malesuada eget finibus ut, ac tortor.
-path: path/to/file
-source: file.js
+<div class="codehilite"><pre><span></span><span class="n">title</span><span class="o">:</span> <span class="n">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span>
+<span class="n">description</span><span class="o">:</span> <span class="n">Nullam</span> <span class="n">urna</span> <span class="n">elit</span><span class="o">,</span> <span class="n">malesuada</span> <span class="n">eget</span> <span class="n">finibus</span> <span class="n">ut</span><span class="o">,</span> <span class="n">ac</span> <span class="n">tortor</span><span class="o">.</span>
+<span class="n">path</span><span class="o">:</span> <span class="n">path</span><span class="sr">/to/</span><span class="n">file</span>
+<span class="n">source</span><span class="o">:</span> <span class="n">file</span><span class="o">.</span><span class="na">js</span>
 
-# Headline
+<span class="err">#</span> <span class="n">Headline</span>
 
-...
+<span class="o">...</span>
 </pre></div>
 
 <p>See the next section which covers the metadata that is supported by Material.</p>
 <h3 id="overriding-the-title">Overriding the title<a class="headerlink" href="#overriding-the-title" title="Permanent link">&para;</a></h3>
 <p>The page title can be overridden on a per-document level:</p>
-<div class="codehilite"><pre><span></span>title: Lorem ipsum dolor sit amet
+<div class="codehilite"><pre><span></span><span class="n">title</span><span class="o">:</span> <span class="n">Lorem</span> <span class="n">ipsum</span> <span class="n">dolor</span> <span class="n">sit</span> <span class="n">amet</span>
 </pre></div>
 
-<p>This will set the <code>title</code> tag inside the document <code>head</code> for the current page
+<p>This will set the <code class="codehilite">title</code> tag inside the document <code class="codehilite">head</code> for the current page
 to the provided value. It will also override the default behavior of Material
 for MkDocs which appends the site title using a dash as a separator to the page
 title.</p>
@@ -660,27 +656,27 @@ title.</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Nullam urna elit, malesuada eget finibus ut, ac tortor.</span>
 </pre></div>
 
-<p>This will set the <code>meta</code> tag containing the site description inside the
-document <code>head</code> for the current page to the provided value.</p>
+<p>This will set the <code class="codehilite">meta</code> tag containing the site description inside the
+document <code class="codehilite">head</code> for the current page to the provided value.</p>
 <h3 id="linking-sources">Linking sources<a class="headerlink" href="#linking-sources" title="Permanent link">&para;</a></h3>
-<p>When a document is related to a specific set of source files and the <code>repo_url</code>
-is defined inside the project's <code>mkdocs.yml</code>, the files can be linked using the
-<code>source</code> key:</p>
-<div class="codehilite"><pre><span></span>source: file.js
+<p>When a document is related to a specific set of source files and the <code class="codehilite">repo_url</code>
+is defined inside the project's <code class="codehilite">mkdocs.yml</code>, the files can be linked using the
+<code class="codehilite">source</code> key:</p>
+<div class="codehilite"><pre><span></span><span class="n">source</span><span class="o">:</span> <span class="n">file</span><span class="o">.</span><span class="na">js</span>
 </pre></div>
 
 <p>A new entry at the bottom of the table of contents is generated that is linking
 to the section listing the linked source files. Multiple files can be linked by
 adding filenames on separate lines:</p>
-<div class="codehilite"><pre><span></span>source: file.js
-        file.css
+<div class="codehilite"><pre><span></span><span class="n">source</span><span class="o">:</span> <span class="n">file</span><span class="o">.</span><span class="na">js</span>
+        <span class="n">file</span><span class="o">.</span><span class="na">css</span>
 </pre></div>
 
-<p>The filenames are appended to the <code>repo_url</code> set in your <code>mkdocs.yml</code>, but can
-be prefixed with a <code>path</code> to ensure correct path resolving:</p>
+<p>The filenames are appended to the <code class="codehilite">repo_url</code> set in your <code class="codehilite">mkdocs.yml</code>, but can
+be prefixed with a <code class="codehilite">path</code> to ensure correct path resolving:</p>
 <p>Example:</p>
-<div class="codehilite"><pre><span></span>path: tree/master/docs/extensions
-source: metadata.md
+<div class="codehilite"><pre><span></span><span class="n">path</span><span class="o">:</span> <span class="n">tree</span><span class="sr">/master/docs/</span><span class="n">extensions</span>
+<span class="n">source</span><span class="o">:</span> <span class="n">metadata</span><span class="o">.</span><span class="na">md</span>
 </pre></div>
 
 <p>Result:</p>
@@ -746,6 +742,10 @@ source: metadata.md
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 Martin Donath, changes by Joshua Burnett
+          </div>
         
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
